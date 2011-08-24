@@ -53,7 +53,6 @@ a {
 	float:left;
 	width:auto;
 	height:112px;
-	background-image:url(../gal4.jpg)
 }
 h1 {
 	margin:0;
@@ -126,7 +125,7 @@ h1 small {
 	display:block;
 	margin:0;
 	padding:16px 0;
-	width:192px;
+	width:160px;
 	font-size:13px;
 	line-height:18px;
 	font-weight:normal;
