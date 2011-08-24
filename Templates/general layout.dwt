@@ -10,11 +10,14 @@
 <style type="text/css">
 <!--
 body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background: #42413C;
 	margin: 0;
 	padding: 0;
 	color: #000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+	background-color: #F90;
+	background-image: url(../dualscreenorig.jpg);
 }
 
 /* ~~ Element/tag selectors ~~ */
@@ -26,6 +29,7 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
 	padding-right: 15px;
 	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-color:#FF3;
 }
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
@@ -41,6 +45,7 @@ a:visited {
 }
 a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
 	text-decoration: none;
+	color: #FC3;
 }
 
 /* ~~ this fixed width container surrounds the other divs ~~ */
@@ -52,7 +57,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 /* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
 .header {
-	background: #ADB96E;
+	background-image: url(../dualscreen%20180x90.jpg);
+	font-color:#FF3;
 }
 
 /* ~~ This is the layout information. ~~ 
@@ -70,6 +76,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .footer {
 	padding: 10px 0;
 	background: #CCC49F;
+	width:800px;
+	position:absolute;
+	bottom:0;
 }
 
 /* ~~ miscellaneous float/clear classes ~~ */
@@ -95,7 +104,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 <body>
 <div class="container">
-  <div class="header"><a href="#"><img src="../dualscreen 180x90.jpg" alt="Insert Logo Here" name="Insert_logo" width="180" height="90" id="Insert_logo" style="background: #C6D580; display:block;" /></a> 
+  <div class="header">
+    <h1><a href="#"><img src="" alt="Insert Logo Here" name="Insert_logo" width="180" height="90" id="Insert_logo" style="background: #C6D580; display:block;"/><div>Teen Connection: Afghanistan</div></a></h1> 
   <!-- end .header --></div>
   <ul id="MenuBar1" class="MenuBarHorizontal">
     <li><a class="MenuBarItemSubmenu" href="#">Item 1</a>
@@ -122,7 +132,12 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   </ul>
   <div class="content">
     <p>&nbsp;</p>
-    <!-- TemplateBeginEditable name="Body" -->Body<!-- TemplateEndEditable --></div>
+    <!-- TemplateBeginEditable name="Body" -->Body<!-- TemplateEndEditable -->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
   <div class="footer">
     <p>Footer</p>
   <!-- end .footer --></div>
