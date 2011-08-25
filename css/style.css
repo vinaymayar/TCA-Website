@@ -52,12 +52,12 @@ a {
 	padding:0;
 	float:left;
 	width:auto;
-	height:112px;
+	height:90px;
 }
 h1 {
 	margin:0;
 	padding:44px 0 0;
-	font-size:48px;
+	font-size:36px;
 	font-weight:normal;
 	line-height:1.2em;
 	text-transform:none;
@@ -69,11 +69,11 @@ h1 a, h1 a:hover {
 h1 span {
 }
 h1 small {
-	font-size:20px;
 	line-height:1.2em;
 	letter-spacing:normal;
 	text-transform:none;
 	color:#3f3f3f;
+	font-size: 16px;
 }
 .slider {
 	padding:0;
@@ -407,6 +407,7 @@ ol li .send {
 	margin:16px 0 0 0;
 }
 .searchform {
+	font-size:14px;
 	padding:0;
 	float:right;
 }
@@ -480,4 +481,8 @@ ol li .send {
 }
 a {
 	outline:none;
+}
+loginstyle {
+	font-size:10px;
+	color:#000;
 }
