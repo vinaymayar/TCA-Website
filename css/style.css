@@ -73,7 +73,7 @@ h1 small {
 	letter-spacing:normal;
 	text-transform:none;
 	color:#3f3f3f;
-	font-size: 16px;
+	font-size: 17px;
 }
 .slider {
 	padding:0;
@@ -407,7 +407,7 @@ ol li .send {
 	margin:16px 0 0 0;
 }
 .searchform {
-	font-size:14px;
+	font-size:11px;
 	padding:0;
 	float:right;
 }
@@ -485,4 +485,7 @@ a {
 loginstyle {
 	font-size:10px;
 	color:#000;
+}
+.main .header .header_resize .logo h1 a {
+	font-size: 44px;
 }
