@@ -81,7 +81,8 @@
         <div class="gadget">
           <h2 class="star"><span><a href="../support.html">Donate</a></span></h2>
           <div class="clr"></div>
-          <div class="post_content"><p>TCA needs money to keep its servers up and running and will begin accepting donations as soon as its non-profit status is approved.</p></div>
+          <div class="post_content">
+          	<p>TCA needs money to keep its servers up and running and will begin accepting donations as soon as its non-profit status is approved.</p></div>
         </div>
         <div class="gadget">
           <h2 class="star"><span>Sponsors</span></h2>
