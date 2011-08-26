@@ -20,18 +20,18 @@
   <table border="0" cellpadding="0" cellspacing="0" align="center">
     <tr>
       <td>Username&nbsp;</td>
-      <td><input name="username" type="text" id="username" maxlength="15"></td>
+      <td><input name="username" type="text" id="username" maxlength="15" /></td>
     </tr>
     <tr>
       <td>Password&nbsp;</td>
-      <td><input name="password" type="password" id="password" maxlength="15"></td>
+      <td><input name="password" type="password" id="password" maxlength="15" /></td>
     </tr>
     
     <tr>
       <td>&nbsp;</td>
       <td>
-        <input name="Login" type="submit" value="Login">
-        <input name="Reset" type="reset" value="Reset">
+        <input name="Login" type="submit" value="Login" />
+        <input name="Reset" type="reset" value="Reset" />
       </td>
     </tr>
   </table>
@@ -101,7 +101,8 @@
         <div class="gadget">
           <h2 class="star"><span><a href="donate.html">Donate</a></span></h2>
           <div class="clr"></div>
-          <div class="post_content"><p>TCA needs money to keep its servers up and running and will begin accepting donations as soon as its non-profit status is approved.</p></div>
+          <div class="post_content">
+          	<p>TCA needs money to keep its servers up and running and will begin accepting donations as soon as its non-profit status is approved.</p></div>
         </div>
         <div class="gadget">
           <h2 class="star"><span>Sponsors</span></h2>
