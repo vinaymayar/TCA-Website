@@ -16,7 +16,7 @@
   <div class="header">
     <div class="header_resize">
       <div class="searchform">
-          <form style="margin: 12px 20px 8px 0px" name="login" method="post" action="login.php">
+          <form style="margin: 30px 20px 8px 0px" name="login" method="post" action="login.php">
   <table border="0" cellpadding="0" cellspacing="0" align="center">
     <tr>
       <td>Username&nbsp;</td>
@@ -39,7 +39,7 @@
 <p style="margin-bottom:0"><a href="members.html">Create an Account</a></p>
       </div>
       <div class="logo">
-        <h1><a href="./">Teen Connection: Afghanistan <small>We need a slogan</small></a></h1>
+        <h1><p><a href="./">Teen Connection: Afghanistan</a></p></h1>
       </div>
       <div class="clr"></div>
       <div class="menu_nav">
@@ -143,7 +143,7 @@
           <span>Telephone:</span> +123-1234-5678<br />
           <span>FAX:</span> +458-4578<br />
           <span>Others:</span> +301 - 0125 - 01258<br />
-          <span>E-mail:</span> --><a href="activistny@aol.com">Click Here to Email Us</a> </p>
+          <span>E-mail:</span> --><a href="mailto:activistny@aol.com">Click Here to Email Us</a> </p>
       </div>
       <div class="clr"></div>
     </div>
