@@ -45,18 +45,19 @@ if (isset($_POST['Login']))
  		$_POST['email'] = addslashes($_POST['email']);
  	}
 	$usercheck = $_POST['username'];
-	$check = sqlite_query($db, "SELECT * FROM users WHERE username = '$usercheck'");
+	$query = "SELECT * FROM users";
+	$check = sqlite_query($db, $query);
     if($check == false)
 	{
 		die('query failed');
 	}
 	$check2 = sqlite_num_rows($check);
-	/*
+	
 	if ($check2 == 0)
 	{
  		die('That user does not exist in our database. <a href=join.html>Click Here to Register</a>');
  	}
-	*/
+	
 	while($info = sqlite_fetch_array($check))
 	{
 		$_POST['password'] = stripslashes($_POST['password']);
