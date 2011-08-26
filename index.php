@@ -36,7 +36,7 @@
     </tr>
   </table>
 </form>
-<p style="margin-bottom:0"><a href="members.html">Create an Account</a></p>
+<p style="margin-bottom:0"><a href="join.html">Create an Account</a></p>
       </div>
       <div class="logo">
         <h1><p><a href="./">Teen Connection: Afghanistan</a></p></h1>
@@ -46,7 +46,7 @@
         <ul>
           <li class="active"><a href="./"><span>Home Page</span></a></li>
           <li><a href="donate.html"><span>Donate</span></a></li>
-          <li><a href="members.html"><span>Join TCA</span></a></li>
+          <li><a href="join.html"><span>Join TCA</span></a></li>
           <li><a href="contribute.html"><span>What You Can Do</span></a></li>
           <li><a href="about.html"><span>About Us</span></a></li>
           <li><a href="contact.html"><span>Contact Us</span></a></li>
