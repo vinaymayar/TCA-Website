@@ -44,15 +44,10 @@
       <div class="clr"></div>
       <div class="menu_nav">
         <ul>
-          <li class="active"><a href="./"><span>Home Page</span></a></li>
-          <li><a href="../donate.html"><span>Donate</span></a></li>
-          <li><a href="../members.html"><span>Join TCA</span></a></li>
-          <li><a href="../contribute.html"><span>What You Can Do</span></a></li>
-          <li><a href="../about.html"><span>About Us</span></a></li>
-          <li><a href="../contact.html"><span>Contact Us</span></a></li>
-
-        </ul>
-      </div>
+		
+        	<!-- TemplateBeginEditable name="navigation bar" --><!-- TemplateEndEditable -->
+        	</ul>
+		</div>
       <div class="clr"></div>
       <!-- TemplateBeginEditable name="topbar" -->
       <div class="slider"> Hello
