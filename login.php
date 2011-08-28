@@ -7,24 +7,44 @@
 
 <body>
 <?php
+/*
+class MyDB extends SQLite3
+{
+    function __construct()
+    {
+        $this->open('usersdb');
+    }
+}
+*/
 try 
 {
-	$db = sqlite_open('usersdb');
-	if($db == false)
+	$link = $mysql_connect('mysql.teenconnectionafghanistan.org', 'tcamysql', 'tca7mysql');
+	if($link == false)
 	{
-		die('failure in retrieving usersdb');
+		die('could not connect');
 	}
+	$db = $link->mysql_select_db('tcausers');
 }
 catch(Exception $e) 
 {
-  	die('could not retrieve database ERROR');
+  	die($e->getMessage());
 }
+/*
+$worked = $db->query("INSERT INTO users VALUES (4, 'vinaymayar', 'sqlite'");
+         
+$toprint = $db->query("SELECT password FROM users WHERE username = 'vinaymayar'");
+if($worked)
+{
+die($toprint);
+}
+*/
+
 if(isset($_COOKIE['ID_my_site']))
 {
 	$username = $_COOKIE['ID_my_site'];
  	$pass = $_COOKIE['Key_my_site'];
 	$check = sqlite_query($db, "SELECT * FROM users WHERE username = '$username'");
-	while($info = sqlite_fetch_array($check))
+	while($info = mysql_fetch_array($check))
 	{
  		if ($pass != $info['password']) 
  		{}
@@ -45,20 +65,20 @@ if (isset($_POST['Login']))
  		$_POST['email'] = addslashes($_POST['email']);
  	}
 	$usercheck = $_POST['username'];
-	$query = "SELECT * FROM users";
-	$check = sqlite_query($db, $query);
+	$query = "SELECT * FROM users WHERE username = '$usercheck'";
+	$check = $db->query($query);
     if($check == false)
 	{
 		die('query failed');
 	}
-	$check2 = sqlite_num_rows($check);
+	$check2 = mysql_num_rows($check);
 	
 	if ($check2 == 0)
 	{
  		die('That user does not exist in our database. <a href=join.html>Click Here to Register</a>');
  	}
 	
-	while($info = sqlite_fetch_array($check))
+	while($info = mysql_fetch_array($check))
 	{
 		$_POST['password'] = stripslashes($_POST['password']);
  		$info['password'] = stripslashes($info['password']);
