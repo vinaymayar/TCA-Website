@@ -20,18 +20,18 @@
   <table border="0" cellpadding="0" cellspacing="0" align="center">
     <tr>
       <td>Username&nbsp;</td>
-      <td><input name="username" type="text" id="username" maxlength="15"></td>
+      <td><input name="username" type="text" id="username" maxlength="15" /></td>
     </tr>
     <tr>
       <td>Password&nbsp;</td>
-      <td><input name="password" type="password" id="password" maxlength="15"></td>
+      <td><input name="password" type="password" id="password" maxlength="15" /></td>
     </tr>
     
     <tr>
       <td>&nbsp;</td>
       <td>
-        <input name="Login" type="submit" value="Login">
-        <input name="Reset" type="reset" value="Reset">
+        <input name="Login" type="submit" value="Login" />
+        <input name="Reset" type="reset" value="Reset" />
       </td>
     </tr>
   </table>
@@ -44,18 +44,25 @@
       <div class="clr"></div>
       <div class="menu_nav">
         <ul>
-          <li class="active"><a href="./"><span>Home Page</span></a></li>
-          <li><a href="donate.html"><span>Donate</span></a></li>
-          <li><a href="join.html"><span>Join TCA</span></a></li>
-          <li><a href="contribute.html"><span>What You Can Do</span></a></li>
-          <li><a href="about.html"><span>About Us</span></a></li>
-          <li><a href="contact.html"><span>Contact Us</span></a></li>
-
-        </ul>
-      </div>
+        	<!-- InstanceBeginEditable name="navigation bar" -->
+			
+        		<li class="active"><a href="./"><span>Home Page</span></a></li>
+        		<li><a href="donate.html"><span>Donate</span></a></li>
+        		<li><a href="members.html"><span>Join TCA</span></a></li>
+        		<li><a href="contribute.html"><span>What You Can Do</span></a></li>
+        		<li><a href="about.html"><span>About Us</span></a></li>
+        		<li><a href="contact.html"><span>Contact Us</span></a></li>
+        		
+			<!-- InstanceEndEditable -->
+        	</ul>
+		</div>
       <div class="clr"></div>
       <!-- InstanceBeginEditable name="topbar" -->
-      <div class="slider"> Hello
+      <div class="slider"> 
+	    <div id="coin-slider"> <a href="#"><img src="images/slide1.jpg" width="960" height="360" alt="" /><span><big>Sed condimentum justo sit amet urna ornare euismod.</big><br />	 	
+          Tusce nec iaculis risus hasellus nec sem sed tellus malesuada porttitor. Mauris scelerisque feugiat ante in vulputate. Nam sit amet ullamcorper tortor. Phasellus posuere facilisis cursus. Nunc est lorem, dictum at scelerisque sit amet, faucibus et est. Proin mattis ipsum quis arcu aliquam molestie.</span></a> <a href="#"><img src="images/slide2.jpg" width="960" height="360" alt="" /><span><big>Amet urna ornare euismodSed condimentum.</big><br />	 	
+          Tusce nec iaculis risus hasellus nec sem sed tellus malesuada porttitor. Mauris scelerisque feugiat ante in vulputate. Nam sit amet ullamcorper tortor. Phasellus posuere facilisis cursus. Nunc est lorem, dictum at scelerisque sit amet, faucibus et est. Proin mattis ipsum quis arcu aliquam molestie.</span></a> <a href="#"><img src="images/slide3.jpg" width="960" height="360" alt="" /><span><big>Sed condimentum justo sit amet urna ornare euismod.</big><br /> 	
+          Tusce nec iaculis risus hasellus nec sem sed tellus malesuada porttitor. Mauris scelerisque feugiat ante in vulputate. Nam sit amet ullamcorper tortor. Phasellus posuere facilisis cursus. Nunc est lorem, dictum at scelerisque sit amet, faucibus et est. Proin mattis ipsum quis arcu aliquam molestie.</span></a> </div>
       	<div class="clr"></div>
       	</div>
       <!-- InstanceEndEditable -->
@@ -96,7 +103,8 @@
         <div class="gadget">
           <h2 class="star"><span><a href="donate.html">Donate</a></span></h2>
           <div class="clr"></div>
-          <div class="post_content"><p>TCA needs money to keep its servers up and running and will begin accepting donations as soon as its non-profit status is approved.</p></div>
+          <div class="post_content">
+          	<p>TCA needs money to keep its servers up and running and will begin accepting donations as soon as its non-profit status is approved.</p></div>
         </div>
         <div class="gadget">
           <h2 class="star"><span>Sponsors</span></h2>

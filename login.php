@@ -71,8 +71,7 @@ if (isset($_POST['Login']))
 	{
 		die('query failed');
 	}
-	$check2 = mysql_num_rows($check);
-	
+	$check2 = mysql_num_rows($check);	
 	if ($check2 == 0)
 	{
  		die('That user does not exist in our database. <a href=join.html>Click Here to Register</a>');
