@@ -5,6 +5,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/coin-slider.css" /> 
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <script type="text/javascript" src="js/cufon-yui.js"></script>
 <script type="text/javascript" src="js/cufon-times-700.js"></script>
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
@@ -36,7 +38,7 @@
     </tr>
   </table>
 </form>
-<p style="margin-bottom:0"><a href="join.html">Create an Account</a></p>
+<p style="margin-bottom:0"><a href="join.php">Create an Account</a></p>
       </div>
       <div class="logo">
         <h1><p><a href="./">Teen Connection: Afghanistan</a></p></h1>
@@ -55,7 +57,7 @@
                 }
                 else
                 {
-					echo("<li><a href='join.html'><span>Join TCA</span></a></li>");
+					echo("<li><a href='join.php'><span>Join TCA</span></a></li>");
 				}
 				?>
                 <li><a href="contribute.php"><span>What You Can Do</span></a></li>
@@ -63,14 +65,17 @@
         		<li><a href="contact.php"><span>Contact Us</span></a></li>
         		
 			<!-- InstanceEndEditable -->
+
         	</ul>
 		</div>
-      <div class="clr"></div>
+      <div class="clr">;</div>
+	  <div class="topbar">
       <!-- InstanceBeginEditable name="topbar" -->
       <div class="slider"> Hello
       	<div class="clr"></div>
       	</div>
       <!-- InstanceEndEditable -->
+	  </div>
       <div class="clr"></div>
     </div>
   </div>

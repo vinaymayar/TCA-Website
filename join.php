@@ -5,6 +5,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/coin-slider.css" /> 
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <script type="text/javascript" src="js/cufon-yui.js"></script>
 <script type="text/javascript" src="js/cufon-times-700.js"></script>
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
@@ -36,7 +38,7 @@
     </tr>
   </table>
 </form>
-<p style="margin-bottom:0"><a href="join.html">Create an Account</a></p>
+<p style="margin-bottom:0"><a href="join.php">Create an Account</a></p>
       </div>
       <div class="logo">
         <h1><p><a href="./">Teen Connection: Afghanistan</a></p></h1>
@@ -44,24 +46,17 @@
       <div class="clr"></div>
       <div class="menu_nav">
         <ul>
-        	<!-- InstanceBeginEditable name="navigation bar" -->
-			
-        		<li><a href="./"><span>Home Page</span></a></li>
-        		<li><a href="donate.html"><span>Donate</span></a></li>
-        		<li><a href="members.html"><span>Join TCA</span></a></li>
-        		<li class="active"><a href="contribute.html"><span>What You Can Do</span></a></li>
-        		<li><a href="about.html"><span>About Us</span></a></li>
-        		<li><a href="contact.html"><span>Contact Us</span></a></li>
-        		
-			<!-- InstanceEndEditable -->
+        	<!-- InstanceBeginEditable name="navigation bar" --><!-- InstanceEndEditable -->
         	</ul>
 		</div>
-      <div class="clr"></div>
+      <div class="clr">;</div>
+	  <div class="topbar">
       <!-- InstanceBeginEditable name="topbar" -->
       <div class="slider"> Hello
       	<div class="clr"></div>
       	</div>
       <!-- InstanceEndEditable -->
+	  </div>
       <div class="clr"></div>
     </div>
   </div>
