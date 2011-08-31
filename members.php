@@ -41,7 +41,10 @@
 <p style="margin-bottom:0"><a href="join.php">Create an Account</a></p>
       </div>
       <div class="logo">
-        <h1><p><a href="./">Teen Connection: Afghanistan</a></p></h1>
+        <h1>
+        	<p><a href="./">This is not Latin. It is </a><a href="http://en.wikipedia.org/wiki/Lorem_ipsum" title="Lorem Ipsum - Wikipedia" target="_new"><span class="hyperlink">Lorem Ipsum.</span></a></p>
+        	<h2 style="color:#F00"><i>Real TCA stuff coming soon.</i></h2>
+        </h1>
       </div>
       <div class="clr"></div>
       <div class="menu_nav">
@@ -65,6 +68,7 @@
         		<li><a href="contact.html"><span>Contact Us</span></a></li>
         		
 			<!-- InstanceEndEditable -->
+
         	</ul>
 		</div>
       <div class="clr">;</div>
