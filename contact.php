@@ -3,6 +3,7 @@
 <head>
 <title>Teen Connection: Afghanistan</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="q99_gDx68tRHS6Vb7FnLbdoyFk7t60ZBBs6YkoR0oGY" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/coin-slider.css" /> 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
