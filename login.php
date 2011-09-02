@@ -74,7 +74,7 @@ if (isset($_POST['Login']))
 	$check2 = mysql_num_rows($check);	
 	if ($check2 == 0)
 	{
- 		die('That user does not exist in our database. <a href=join.html>Click Here to Register</a>');
+ 		die('That user does not exist in our database. <a href=join.php>Click Here to Register</a>');
  	}
 	
 	while($info = mysql_fetch_array($check))
