@@ -91,7 +91,7 @@ if (isset($_POST['Login']))
 			$hour = time() + 3600;
 			setcookie(ID_my_site, $_POST['username'], $hour);
 			setcookie(Key_my_site, $_POST['pass'], $hour);
-			header("HTTP/1.0 404 Not Found");
+			header("members.html");
 		}
 	}
 }
