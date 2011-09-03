@@ -7,21 +7,13 @@
 
 <body>
 <?php
-/*
-class MyDB extends SQLite3
-{
-    function __construct()
-    {
-        $this->open('usersdb');
-    }
-}
-*/
+
 try 
 {
-	$link = $mysql_connect('mysql.teenconnectionafghanistan.org', 'tcamysql', 'tca7mysql');
+	$link = mysql_connect('mysql.teenconnectionafghanistan.org', 'tcamysql', 'tca7mysql');
 	if($link == false)
 	{
-		die('could not connect');
+		die('Could not connect to the users database.  Please try again later.');
 	}
 	$db = $link->mysql_select_db('tcausers');
 }
@@ -29,21 +21,13 @@ catch(Exception $e)
 {
   	die($e->getMessage());
 }
-/*
-$worked = $db->query("INSERT INTO users VALUES (4, 'vinaymayar', 'sqlite'");
-         
-$toprint = $db->query("SELECT password FROM users WHERE username = 'vinaymayar'");
-if($worked)
-{
-die($toprint);
-}
-*/
+
 
 if(isset($_COOKIE['ID_my_site']))
 {
 	$username = $_COOKIE['ID_my_site'];
  	$pass = $_COOKIE['Key_my_site'];
-	$check = sqlite_query($db, "SELECT * FROM users WHERE username = '$username'");
+	$check = mysql_query($db, "SELECT * FROM users WHERE username = '$username'");
 	while($info = mysql_fetch_array($check))
 	{
  		if ($pass != $info['password']) 
