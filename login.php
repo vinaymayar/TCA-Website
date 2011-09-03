@@ -1,25 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php
+session_start();
+if(isset($_SESSION['url'])) 
+   $url = $_SESSION['url'];
+else 
+   $url = "index.html";
 $link = mysql_connect('mysql.teenconnectionafghanistan.org', 'tcamysql', 'tca7mysql') OR die(mysql_error());
-/*
-try 
-{
-	$link = mysql_connect('mysql.teenconnectionafghanistan.org', 'tcamysql', 'tca7mysql');
-	if($link == false)
-	{
-		die('Could not connect to the users database.  Please try again later.');
-	}
-	$db = mysql_select_db('tcausers', $link);
-	if($db == false)
-	{
-		die('Could not select database');
-	}
-}
-catch(Exception $e) 
-{
-  	die($e->getMessage());
-}
-*/
+
 $db = mysql_select_db('tcausers', $link) OR die(mysql_error());
 
 
@@ -27,14 +14,15 @@ if(isset($_COOKIE['ID_my_site']))
 {
 	$username = $_COOKIE['ID_my_site'];
  	$pass = $_COOKIE['Key_my_site'];
-	$check = mysql_query("SELECT * FROM users WHERE username = '$username'", $db);
+	$query = sprintf("SELECT * FROM users WHERE username='%s'", mysql_real_escape_string($username));
+	$check = mysql_query($query);
 	while($info = mysql_fetch_array($check))
 	{
  		if ($pass != $info['password']) 
  		{}
  		else
  		{
- 			header("Location: members.html");
+ 			header("Location: http://www.teenconnectionafghanistan.org/$url");
  		}
  	}
 }
@@ -66,7 +54,7 @@ if (isset($_POST['Login']))
 		$_POST['password'] = stripslashes($_POST['password']);
  		$info['password'] = stripslashes($info['password']);
 	 	if ($_POST['password'] != $info['password']) {
- 			die('Incorrect password, please try again.');
+ 			die('Incorrect password, please try again. <a href="http://www.teenconnectionafghanistan.org/$url">Return to previous page.</a>');
  		}
 		else
 		{
@@ -78,8 +66,7 @@ if (isset($_POST['Login']))
 				die(print_r($_COOKIE));
 			}
 			setcookie(Key_my_site, $_POST['password'], $hour, "/", ".teenconnectionafghanistan.org", false, false);
-			$extra = 'index.html';
-			header("Location: http://www.teenconnectionafghanistan.org/$extra");
+			header("Location: http://www.teenconnectionafghanistan.org/$url");
 			exit;		
 		}
 	}

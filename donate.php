@@ -1,4 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+session_start();
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
+?>
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/layout.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <title>Teen Connection: Afghanistan</title>
@@ -75,7 +79,7 @@
       <div class="clr">;</div>
 	  <div class="topbar">
       <!-- InstanceBeginEditable name="topbar" -->
-      <div class="slider"> Hello
+      <div class="slider"> <?php echo $_COOKIE['ID_my_site'] ?>
       	<div class="clr"></div>
       	</div>
       <!-- InstanceEndEditable -->
