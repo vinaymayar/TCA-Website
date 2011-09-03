@@ -54,17 +54,15 @@ if (isset($_POST['Login']))
 		$_POST['password'] = stripslashes($_POST['password']);
  		$info['password'] = stripslashes($info['password']);
 	 	if ($_POST['password'] != $info['password']) {
- 			die('Incorrect password, please try again. <a href="http://www.teenconnectionafghanistan.org/$url">Return to previous page.</a>');
+ 			die('Incorrect password, please try again. <a href="http://www.teenconnectionafghanistan.org$url">Return to previous page.</a>');
  		}
 		else
 		{
 			$_POST['username'] = stripslashes($_POST['username']);
 			$hour = time() + 3600;
 
-			if(setcookie(ID_my_site, $_POST['username'], $hour, "/", ".teenconnectionafghanistan.org", false, false) == false)
-			{
-				die(print_r($_COOKIE));
-			}
+			setcookie(ID_my_site, $_POST['username'], $hour, "/", ".teenconnectionafghanistan.org", false, false);
+			
 			setcookie(Key_my_site, $_POST['password'], $hour, "/", ".teenconnectionafghanistan.org", false, false);
 			header("Location: http://www.teenconnectionafghanistan.org$url");
 			exit;		
