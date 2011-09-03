@@ -22,7 +22,7 @@ if(isset($_COOKIE['ID_my_site']))
  		{}
  		else
  		{
- 			header("Location: http://www.teenconnectionafghanistan.org/$url");
+ 			header("Location: http://www.teenconnectionafghanistan.org$url");
  		}
  	}
 }
@@ -66,7 +66,7 @@ if (isset($_POST['Login']))
 				die(print_r($_COOKIE));
 			}
 			setcookie(Key_my_site, $_POST['password'], $hour, "/", ".teenconnectionafghanistan.org", false, false);
-			header("Location: http://www.teenconnectionafghanistan.org/$url");
+			header("Location: http://www.teenconnectionafghanistan.org$url");
 			exit;		
 		}
 	}
