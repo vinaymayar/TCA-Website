@@ -430,6 +430,11 @@ ol li .send {
 	padding:0;
 	float:right;
 }
+.searchformloggedin {
+	font-size:12px;
+	padding:0;
+	float:right;
+}
 #formsearch {
 	margin:0;
 	padding:42px 0 0;

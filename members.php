@@ -1,5 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/layout.dwt" codeOutsideHTMLIsLocked="false" -->
+<?php
+session_start();
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
+?>
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/layout.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <title>Teen Connection: Afghanistan</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -18,7 +22,11 @@
 <div class="main">
   <div class="header">
     <div class="header_resize">
-      <div class="searchform">
+    <?php
+	if(!isset($_COOKIE['ID_my_site']))
+	{
+		?>
+<div class="searchform">
           <form style="margin: 30px 20px 8px 0px" name="login" method="post" action="login.php">
   <table border="0" cellpadding="0" cellspacing="0" align="center">
     <tr>
@@ -41,6 +49,24 @@
 </form>
 <p style="margin-bottom:0"><a href="join.php">Create an Account</a></p>
       </div>
+      <?php
+	}
+	if(isset($_COOKIE['ID_my_site']))
+	{
+     ?> 
+      <div class="searchformloggedin">
+      <table float="right" border="0" align="center" cellpadding="0" cellspacing="0"  style="margin: 30px 5px 8px 0px">
+    <tr>
+      <td colspan="2" align="center"><h2 class="star">Welcome, <?php echo $_COOKIE['ID_my_site'] ?>.</h2></td>
+      </tr>
+     <tr>
+     <td width="75" align="center"><a href="members.php">Your Account</a></td>
+     <td width="75" align="center"><a href="logoff.php">Sign Out</a></td>
+     </tr>
+     </table>
+      
+      </div>
+      <?php } ?>
       <div class="logo">
         <h1>
         	<p><a href="./">This is not Latin. It is </a><a href="http://en.wikipedia.org/wiki/Lorem_ipsum" title="Lorem Ipsum - Wikipedia" target="_new"><span class="hyperlink">Lorem Ipsum.</span></a></p>
