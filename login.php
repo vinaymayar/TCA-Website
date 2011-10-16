@@ -4,16 +4,19 @@ session_start();
 if(isset($_SESSION['url'])) 
    $url = $_SESSION['url'];
 else 
-   $url = "index.html";
+   $url = "/index.html";
+   
 $link = mysql_connect('mysql.teenconnectionafghanistan.org', 'tcamysql', 'tca7mysql') OR die(mysql_error());
 
 $db = mysql_select_db('tcausers', $link) OR die(mysql_error());
 
+if($url == "login.php")
+$url = "/index.html";
 
 if(isset($_COOKIE['ID_my_site']))
 {
 	$username = $_COOKIE['ID_my_site'];
- 	$pass = $_COOKIE['Key_my_site'];
+ 	$pass = 'SHA($_COOKIE["Key_my_site"])';
 	$query = sprintf("SELECT * FROM users WHERE username='%s'", mysql_real_escape_string($username));
 	$check = mysql_query($query);
 	while($info = mysql_fetch_array($check))
@@ -22,7 +25,7 @@ if(isset($_COOKIE['ID_my_site']))
  		{}
  		else
  		{
- 			header("Location: http://www.teenconnectionafghanistan.org$url");
+ 			header("Location: http://www.teenconnectionafghanistan.org" . $url . "");
  		}
  	}
 }
@@ -46,15 +49,14 @@ if (isset($_POST['Login']))
 	$check2 = mysql_num_rows($check);	
 	if ($check2 == 0)
 	{
- 		die('That user does not exist in our database. <a href=join.php>Click Here to Register</a>');
+ 		die('That user does not exist in our database. <a href=register.php>Click Here to Register</a>');
  	}
 	
 	while($info = mysql_fetch_array($check))
 	{
-		$_POST['password'] = stripslashes($_POST['password']);
- 		$info['password'] = stripslashes($info['password']);
-	 	if ($_POST['password'] != $info['password']) {
- 			die('Incorrect password, please try again. <a href="http://www.teenconnectionafghanistan.org$url">Return to previous page.</a>');
+		$password = stripslashes($_POST['password']);
+	 	if ('SHA($password)' != $info['password']) {
+ 			die('Incorrect password, please try again. <a href="http://www.teenconnectionafghanistan.org' . $url . '">Return to previous page.</a>');
  		}
 		else
 		{
@@ -63,8 +65,8 @@ if (isset($_POST['Login']))
 
 			setcookie(ID_my_site, $_POST['username'], $hour, "/", ".teenconnectionafghanistan.org", false, false);
 			
-			setcookie(Key_my_site, $_POST['password'], $hour, "/", ".teenconnectionafghanistan.org", false, false);
-			header("Location: http://www.teenconnectionafghanistan.org$url");
+			setcookie(Key_my_site, $password, $hour, "/", ".teenconnectionafghanistan.org", false, false);
+			header("Location: http://www.teenconnectionafghanistan.org" . $url . "");
 			exit;		
 		}
 	}
