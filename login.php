@@ -64,9 +64,9 @@ if (isset($_POST['Login']))
 			$_POST['username'] = stripslashes($_POST['username']);
 			$hour = time() + 3600;
 
-			setcookie("ID_my_site", $_POST['username'], $hour, "/", ".teenconnectionafghanistan.org", false, false);
+			setcookie(ID_my_site, $_POST['username'], $hour, "/", ".teenconnectionafghanistan.org", false, false);
 			
-			setcookie("Key_my_site", $password, $hour, "/", ".teenconnectionafghanistan.org", false, false);
+			setcookie(Key_my_site, $password, $hour, "/", ".teenconnectionafghanistan.org", false, false);
 			header("Location: http://www.teenconnectionafghanistan.org" . $url . "");
 			exit;		
 		}
