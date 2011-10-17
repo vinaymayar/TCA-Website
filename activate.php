@@ -19,9 +19,9 @@ if ( ($x> 0) && (strlen($y) == 32)) {
     $result = mysql_query($query);
    
     if (mysql_affected_rows() == 1) {
-        echo "<h3>Your account is now active. You may now log in.</h3>";
+        echo "<h3>Your account is now active. You may now <a href='http://www.teenconnectionafghanistan.org/login.php'>log in.</a>/h3>";
     } else {
-        echo '<p><font color="red" size="+1">Your account could not be activated. Please re-check the link or contact the system administrator.</font></p>';
+        echo '<p><font color="red" size="+1">Your account could not be activated. Please double-check the link or contact the system administrator.</font></p>';
     }
  
     mysql_close();

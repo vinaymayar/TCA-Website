@@ -16,7 +16,7 @@ $url = "/index.html";
 if(isset($_COOKIE['ID_my_site']))
 {
 	$username = $_COOKIE['ID_my_site'];
- 	$pass = 'SHA($_COOKIE["Key_my_site"])';
+ 	$pass = hash("sha256", $_COOKIE["Key_my_site"]);
 	$query = sprintf("SELECT * FROM users WHERE username='%s'", mysql_real_escape_string($username));
 	$check = mysql_query($query);
 	while($info = mysql_fetch_array($check))
@@ -55,7 +55,8 @@ if (isset($_POST['Login']))
 	while($info = mysql_fetch_array($check))
 	{
 		$password = stripslashes($_POST['password']);
-	 	if ('SHA($password)' != $info['password']) {
+		$hash = hash("sha256", $password);
+	 	if ($hash != $info['password']) {
  			die('Incorrect password, please try again. <a href="http://www.teenconnectionafghanistan.org' . $url . '">Return to previous page.</a>');
  		}
 		else

@@ -44,10 +44,11 @@ if (isset($_POST['submitted'])) {
     }
 	
 	if (empty($errors)) {
-		$firstname = $_POST['firstname'];
-		$lastname = $_POST['lastname'];
+		$firstname = mysql_real_escape_string($_POST['firstname']);
+		$lastname = mysql_real_escape_string($_POST['lastname']);
         $a = md5(uniqid(rand(), true));
-        $query = "INSERT INTO users (username, firstname, lastname, email, password, active) VALUES ('$user', '$firstname', '$lastname', '$email', SHA('$password'), '$a')";
+		$hash = hash("sha256", $password);
+        $query = "INSERT INTO users (username, firstname, lastname, email, password, active) VALUES ('$username', '$firstname', '$lastname', '$email', '$hash', '$a')";
         $result = @mysql_query($query);
         if (mysql_affected_rows() == 1) {
             // Send the E-Mail
@@ -61,7 +62,8 @@ if (isset($_POST['submitted'])) {
 		else {
             echo '<font color="red">You could not be registered, please contact us about the problem and we will fix it as soon as we can.</font>';
         }
-} else {
+}
+else {
         echo '<h3>Error!</h3>
         The following error(s) occured:<br />';
        
