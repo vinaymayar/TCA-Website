@@ -69,8 +69,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       <?php } ?>
       <div class="logo">
         <h1>
-        	<p><a href="./">This is not Latin. It is </a><a href="http://en.wikipedia.org/wiki/Lorem_ipsum" title="Lorem Ipsum - Wikipedia" target="_new"><span class="hyperlink">Lorem Ipsum.</span></a></p>
-        	<h2 style="color:#F00"><i>Real TCA stuff coming soon.</i></h2>
+        	<p>Teen Connection: Afghanistan</p>
+        	<h2><i>Website still under construction</i></h2>
         </h1>
       </div>
       <div class="clr"></div>
@@ -86,7 +86,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                 }
                 else
                 {
-					echo("<li><a href='join.php'><span>Join TCA</span></a></li>");
+					echo("<li><a href='register.php'><span>Join TCA</span></a></li>");
 				}
 				?>
                 <li><a href="contribute.php"><span>What You Can Do</span></a></li>
@@ -174,7 +174,11 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <div class="fbg_resize">
       <div class="col c1">
         <h2><span>Image</span> Gallery</h2>
-        <a href="#"><img src="images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a> </div>
+        <p>Our image gallery is currently empty.</p>
+        <!--
+        <a href="#"><img src="../images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a>
+        -->
+        </div>
       <div class="col c2">
         <h2><span>Charity</span> Overview</h2>
         <p>Teen Connection: Afghanistan offers children in Afghanistan the opportunity to communicate with high-school and college students, giving them access to information and culture they would not otherwise encounter.  TCA supplements efforts to distribute computers in Afghanistan with the chance to talk to real people, for pen-pal-like mutual learning.</p>

@@ -1,9 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?php
-session_start();
-$_SESSION['url'] = $_SERVER['REQUEST_URI'];
-?>
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/layout.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/layout.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <title>Teen Connection: Afghanistan</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,11 +18,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 <div class="main">
   <div class="header">
     <div class="header_resize">
-    <?php
-	if(!isset($_COOKIE['ID_my_site']))
-	{
-		?>
-<div class="searchform">
+      <div class="searchform">
           <form style="margin: 30px 20px 8px 0px" name="login" method="post" action="login.php">
   <table border="0" cellpadding="0" cellspacing="0" align="center">
     <tr>
@@ -49,34 +41,34 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 </form>
 <p style="margin-bottom:0"><a href="join.php">Create an Account</a></p>
       </div>
-      <?php
-	}
-	if(isset($_COOKIE['ID_my_site']))
-	{
-     ?> 
-      <div class="searchformloggedin">
-      <table float="right" border="0" align="center" cellpadding="0" cellspacing="0"  style="margin: 30px 5px 8px 0px">
-    <tr>
-      <td colspan="2" align="center"><h2 class="star">Welcome, <?php echo $_COOKIE['ID_my_site'] ?>.</h2></td>
-      </tr>
-     <tr>
-     <td width="75" align="center"><a href="members.php">Your Account</a></td>
-     <td width="75" align="center"><a href="logoff.php">Sign Out</a></td>
-     </tr>
-     </table>
-      
-      </div>
-      <?php } ?>
       <div class="logo">
         <h1>
-        	<p>Teen Connection: Afghanistan</p>
-        	<h2><i>Website still under construction</i></h2>
+        	<p><a href="./">This is not Latin. It is </a><a href="http://en.wikipedia.org/wiki/Lorem_ipsum" title="Lorem Ipsum - Wikipedia" target="_new"><span class="hyperlink">Lorem Ipsum.</span></a></p>
+        	<h2 style="color:#F00"><i>Real TCA stuff coming soon.</i></h2>
         </h1>
       </div>
       <div class="clr"></div>
       <div class="menu_nav">
         <ul>
-        	<!-- InstanceBeginEditable name="navigation bar" --><!-- InstanceEndEditable -->
+        	<!-- InstanceBeginEditable name="navigation bar" -->
+			
+        		<li><a href="./"><span>Home Page</span></a></li>
+        		<li class="active"><a href="donate.php"><span>Donate</span></a></li>
+<?php
+                if(isset($_COOKIE['ID_my_site']))
+                {
+				echo("<li><a href='members.php'><span>Your Account</span></a></li>");
+                }
+                else
+                {
+					echo("<li><a href='join.php'><span>Join TCA</span></a></li>");
+				}
+				?>
+                <li><a href="contribute.php"><span>What You Can Do</span></a></li>
+        		<li><a href="about.php"><span>About Us</span></a></li>
+        		<li><a href="contact.php"><span>Contact Us</span></a></li>
+        		
+			<!-- InstanceEndEditable -->
 
         	</ul>
 		</div>
@@ -157,11 +149,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <div class="fbg_resize">
       <div class="col c1">
         <h2><span>Image</span> Gallery</h2>
-        <p>Our image gallery is currently empty.</p>
-        <!--
-        <a href="#"><img src="../images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a>
-        -->
-        </div>
+        <a href="#"><img src="images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a> </div>
       <div class="col c2">
         <h2><span>Charity</span> Overview</h2>
         <p>Teen Connection: Afghanistan offers children in Afghanistan the opportunity to communicate with high-school and college students, giving them access to information and culture they would not otherwise encounter.  TCA supplements efforts to distribute computers in Afghanistan with the chance to talk to real people, for pen-pal-like mutual learning.</p>
