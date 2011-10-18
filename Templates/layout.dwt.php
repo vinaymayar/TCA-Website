@@ -66,7 +66,7 @@
       <div class="logo">
         <h1>
         	<p>Teen Connection: Afghanistan</p>
-        	<h2><i>Website still under construction</i></h2>
+        	<!--<h2><i>Website still under construction</i></h2>-->
         </h1>
       </div>
       <div class="clr"></div>
