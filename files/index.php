@@ -1,5 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/layout.dwt" codeOutsideHTMLIsLocked="false" -->
+<?php
+session_start();
+$_SESSION['url'] = $_SERVER['REQUEST_URI'];
+?>
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/layout.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <title>Teen Connection: Afghanistan</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -18,7 +22,11 @@
 <div class="main">
   <div class="header">
     <div class="header_resize">
-      <div class="searchform">
+    <?php
+	if(!isset($_COOKIE['ID_my_site']))
+	{
+		?>
+<div class="searchform">
           <form style="margin: 30px 20px 8px 0px" name="login" method="post" action="login.php">
   <table border="0" cellpadding="0" cellspacing="0" align="center">
     <tr>
@@ -41,10 +49,28 @@
 </form>
 <p style="margin-bottom:0"><a href="join.php">Create an Account</a></p>
       </div>
+      <?php
+	}
+	if(isset($_COOKIE['ID_my_site']))
+	{
+     ?> 
+      <div class="searchformloggedin">
+      <table float="right" border="0" align="center" cellpadding="0" cellspacing="0"  style="margin: 30px 5px 8px 0px">
+    <tr>
+      <td colspan="2" align="center"><h2 class="star">Welcome, <?php echo $_COOKIE['ID_my_site'] ?>.</h2></td>
+      </tr>
+     <tr>
+     <td width="75" align="center"><a href="members.php">Your Account</a></td>
+     <td width="75" align="center"><a href="logoff.php">Sign Out</a></td>
+     </tr>
+     </table>
+      
+      </div>
+      <?php } ?>
       <div class="logo">
         <h1>
-        	<p><a href="./">This is not Latin. It is </a><a href="http://en.wikipedia.org/wiki/Lorem_ipsum" title="Lorem Ipsum - Wikipedia" target="_new"><span class="hyperlink">Lorem Ipsum.</span></a></p>
-        	<h2 style="color:#F00"><i>Real TCA stuff coming soon.</i></h2>
+        	<p>Teen Connection: Afghanistan</p>
+        	<!--<h2><i>Website still under construction</i></h2>-->
         </h1>
       </div>
       <div class="clr"></div>
@@ -61,7 +87,7 @@
                 }
                 else
                 {
-					echo("<li><a href='join.php'><span>Join TCA</span></a></li>");
+					echo("<li><a href='register.php'><span>Join TCA</span></a></li>");
 				}
 				?>
                 <li><a href="contribute.php"><span>What You Can Do</span></a></li>
@@ -76,10 +102,10 @@
 	  <div class="topbar">
       <!-- InstanceBeginEditable name="topbar" -->
       <div class="slider"> 
-	    <div id="coin-slider"> <a href="#"><img src="images/slide1.jpg" width="960" height="360" alt="" /><span><big>Sed condimentum justo sit amet urna ornare euismod.</big><br />	 	
-          Tusce nec iaculis risus hasellus nec sem sed tellus malesuada porttitor. Mauris scelerisque feugiat ante in vulputate. Nam sit amet ullamcorper tortor. Phasellus posuere facilisis cursus. Nunc est lorem, dictum at scelerisque sit amet, faucibus et est. Proin mattis ipsum quis arcu aliquam molestie.</span></a> <a href="#"><img src="images/slide2.jpg" width="960" height="360" alt="" /><span><big>Amet urna ornare euismodSed condimentum.</big><br />	 	
-          Tusce nec iaculis risus hasellus nec sem sed tellus malesuada porttitor. Mauris scelerisque feugiat ante in vulputate. Nam sit amet ullamcorper tortor. Phasellus posuere facilisis cursus. Nunc est lorem, dictum at scelerisque sit amet, faucibus et est. Proin mattis ipsum quis arcu aliquam molestie.</span></a> <a href="#"><img src="images/slide3.jpg" width="960" height="360" alt="" /><span><big>Sed condimentum justo sit amet urna ornare euismod.</big><br /> 	
-          Tusce nec iaculis risus hasellus nec sem sed tellus malesuada porttitor. Mauris scelerisque feugiat ante in vulputate. Nam sit amet ullamcorper tortor. Phasellus posuere facilisis cursus. Nunc est lorem, dictum at scelerisque sit amet, faucibus et est. Proin mattis ipsum quis arcu aliquam molestie.</span></a> </div>
+	    <div id="coin-slider"> <a href="#"><img src="images/slide1.jpg" width="960" height="360" alt="" /><span><big>Caption</big><br />	 	
+          Info</span></a> <a href="#"><img src="images/slide2.jpg" width="960" height="360" alt="" /><span><big>Title</big><br />	 	
+         Info</span></a> <a href="#"><img src="images/slide3.jpg" width="960" height="360" alt="" /><span><big>Title</big><br /> 	
+          Info</span></a> </div>
       	<div class="clr"></div>
       	</div>
       <!-- InstanceEndEditable -->
@@ -153,7 +179,11 @@
     <div class="fbg_resize">
       <div class="col c1">
         <h2><span>Image</span> Gallery</h2>
-        <a href="#"><img src="images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a> </div>
+        <p>Our image gallery is currently empty.</p>
+        <!--
+        <a href="#"><img src="../images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a>
+        -->
+        </div>
       <div class="col c2">
         <h2><span>Charity</span> Overview</h2>
         <p>Teen Connection: Afghanistan offers children in Afghanistan the opportunity to communicate with high-school and college students, giving them access to information and culture they would not otherwise encounter.  TCA supplements efforts to distribute computers in Afghanistan with the chance to talk to real people, for pen-pal-like mutual learning.</p>
