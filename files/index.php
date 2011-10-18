@@ -78,7 +78,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
         <ul>
         	<!-- InstanceBeginEditable name="navigation bar" -->
 			
-        		<li class="active"><a href="./"><span>Home Page</span></a></li>
+        		<li><a href="./"><span>Home Page</span></a></li>
         		<li><a href="donate.php"><span>Donate</span></a></li>
 <?php
                 if(isset($_COOKIE['ID_my_site']))
@@ -91,7 +91,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 				}
 				?>
                 <li><a href="contribute.php"><span>What You Can Do</span></a></li>
-        		<li><a href="about.php"><span>About Us</span></a></li>
+        		<li class="active"><a href="about.php"><span>About Us</span></a></li>
         		<li><a href="contact.php"><span>Contact Us</span></a></li>
         		
 			<!-- InstanceEndEditable -->
@@ -101,12 +101,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       <div class="clr">;</div>
 	  <div class="topbar">
       <!-- InstanceBeginEditable name="topbar" -->
-      <div class="slider"> 
-	    <div id="coin-slider"> <a href="#"><img src="images/slide1.jpg" width="960" height="360" alt="" /><span><big>Caption</big><br />	 	
-          Info</span></a> <a href="#"><img src="images/slide2.jpg" width="960" height="360" alt="" /><span><big>Title</big><br />	 	
-         Info</span></a> <a href="#"><img src="images/slide3.jpg" width="960" height="360" alt="" /><span><big>Title</big><br /> 	
-          Info</span></a> </div>
-      	<div class="clr"></div>
+      <div class="slider">
+        <div class="clr"></div>
       	</div>
       <!-- InstanceEndEditable -->
 	  </div>
@@ -116,31 +112,15 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
   <div class="content">
     <div class="content_resize"><!-- InstanceBeginEditable name="mainbar" -->
     	<div class="mainbar">
-    		<div class="article">
-    			<h2><span>A Charity</span> Organization!</h2>
-    			<p class="infopost">Posted <span class="date">on 11 sep 2018</span> by <a href="#">Admin</a> &nbsp;&nbsp;|&nbsp;&nbsp; Filed under <a href="#">templates</a>, <a href="#">internet</a> <a href="#" class="com">Comments <span>11</span></a></p>
+    		
+    			<h2><span>Mission</span><br /> Statement:</h2>
     			<div class="clr"></div>
-    			<div class="img"><img src="images/img1.jpg" width="198" height="208" alt="" class="fl" /></div>
-    			<div class="post_content">
-    				<p>Lorem ipsum dolor sit amet, onsectetuer adipiscing elit. Donec libero. <a href="#">Suspendisse bibendum. Cras id urna.</a> Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque. Curabitur vel urna. In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo.</p>
-    				<p><strong>Aenean consequat porttitor adipiscing. Nam pellentesque justo ut tortor congue lobortis. Donec venenatis sagittis fringilla.</strong> Etiam nec libero magna, et dictum velit. Proin mauris mauris, mattis eu elementum eget, commodo in nulla. Mauris posuere venenatis pretium. Maecenas a dui sed lorem aliquam dictum. Nunc urna leo, imperdiet eu bibendum ac, pretium ac massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Quisque condimentum luctus ullamcorper.</p>
-    				<p class="spec"><a href="#" class="rm">Read more</a></p>
-    				</div>
+    				<p><strong>"Our mission is to promote conversation between the youth of Afghanistan and America and to foster understanding, respect, and a sense of global community among the leaders of the future. Teen Connection: Afghanistan brings teenagers together from two different cultures through social networking, email, and video. TCA members in both countries work as equals to share their cultures and worldviews, and, in doing so, lay the foundation for a more understanding society of tomorrow."</strong></p>
     			<div class="clr"></div>
-    			</div>
-    		<div class="article">
-    			<h2><span>yay</span> blah</h2>
-    			<p class="infopost">Posted <span class="date">on 29 aug 2016</span> by <a href="#">Admin</a> &nbsp;&nbsp;|&nbsp;&nbsp; Filed under <a href="#">templates</a>, <a href="#">internet</a> <a href="#" class="com">Comments <span>7</span></a></p>
+    			<h2><span>Our</span> <br />Purpose:</h2>
     			<div class="clr"></div>
-    			<div class="img"><img src="images/img2.jpg" width="198" height="208" alt="" class="fl" /></div>
-    			<div class="post_content">
-    				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. <a href="#">Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo.</a> Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque. Curabitur vel urna. In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam.</p>
-    				<p><strong>Aenean consequat porttitor adipiscing. Nam pellentesque justo ut tortor congue lobortis. Donec venenatis sagittis fringilla.</strong> Etiam nec libero magna, et dictum velit. Proin mauris mauris, mattis eu elementum eget, commodo in nulla. Mauris posuere venenatis pretium. Maecenas a dui sed lorem aliquam dictum. Nunc urna leo, imperdiet eu bibendum ac, pretium ac massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Quisque condimentum luctus ullamcorper.</p>
-    				<p class="spec"><a href="#" class="rm">Read more</a></p>
-    				</div>
+    			<p><strong>Teen Connection Afghanistan was created in acknowledgement that while many adults may become set in their ways and beliefs, kids are more capable of abolishing preconceived notions of people and cultures.  Children can learn to be more understanding and accepting of people different from themselves, but only if they are allowed the opportunity to interact and build relationships.  From this notion comes TCA's core concept: that teenagers from America and Afghanistan if given the chance to speak to one another and to learn from one another, will as adults, be more invested in one another's wellbeing.</strong></p>
     			<div class="clr"></div>
-    			</div>
-    		<p class="pages"><small>Page 1 of 2</small> <span>1</span> <a href="#">2</a> <a href="#">&raquo;</a></p>
     		</div>
     <!-- InstanceEndEditable -->
     	<div class="sidebar">
