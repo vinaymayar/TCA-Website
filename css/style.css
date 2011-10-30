@@ -12,7 +12,7 @@ html, .main {
 	margin:0;
 }
 .main {
-	/*background-color:#03F;
+	background-color:#03F;
 */	background:#ededed url(../images/main_bg.gif) repeat-x left top;
 
 }
@@ -23,6 +23,12 @@ html, .main {
 	width:100%;
 	font-size:0;
 	line-height:0;
+}
+#container {
+    background: #800000;
+    width: 80%;
+    margin: 0 auto;
+    position: relative
 }
 h2 {
 	margin:8px 0;
