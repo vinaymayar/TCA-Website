@@ -125,6 +125,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
                 </div>
     		</div>
     <!-- InstanceEndEditable -->
+    
+    <!--
     	<div class="sidebar">
         <div class="gadget">
           <h2 class="star"><span><a href="../donate.html">Donate</a></span></h2>
@@ -137,7 +139,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
           <div class="clr"></div>
           <div class="post_content"><p>Contact us to sponsor TCA!</p></div>
           <ul class="ex_menu">
-            <!--
+           00><!--
             <li><a href="http://www.dreamtemplate.com/">DreamTemplate</a><br />
               Over 6,000+ Premium Web Templates</li>
             <li><a href="http://www.templatesold.com/">TemplateSOLD</a><br />
@@ -150,12 +152,13 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
               Website Builder Software &amp; Tools</li>
             <li><a href="http://www.csshub.com/">CSS Hub</a><br />
               Premium CSS Templates</li>
-              -->
+              --><!--
           </ul>
         </div>
       </div>
       <div class="clr"></div>
     </div>
+    -->
   </div>
   <div class="fbg">
     <div class="fbg_resize">
