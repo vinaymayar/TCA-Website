@@ -8,17 +8,18 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 <title>Teen Connection: Afghanistan</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="google-site-verification" content="q99_gDx68tRHS6Vb7FnLbdoyFk7t60ZBBs6YkoR0oGY" />
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="css/coin-slider.css" /> 
+<link href="./css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/coin-slider.css" /> 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/cufon-times-700.js"></script>
-<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/coin-slider.min.js"></script>
+<script type="text/javascript" src="../js/cufon-yui.js"></script>
+<script type="text/javascript" src="../js/cufon-times-700.js"></script>
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" src="../js/coin-slider.min.js"></script>
 </head>
 <body>
+<div id="container"></div>
 <div class="main">
   <div class="header">
     <div class="header_resize">
@@ -125,7 +126,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <!-- InstanceEndEditable -->
     	<div class="sidebar">
         <div class="gadget">
-          <h2 class="star"><span><a href="donate.html">Donate</a></span></h2>
+          <h2 class="star"><span><a href="../donate.html">Donate</a></span></h2>
           <div class="clr"></div>
           <div class="post_content">
           	<p>TCA needs money to keep its servers up and running and will begin accepting donations as soon as its non-profit status is approved.</p></div>

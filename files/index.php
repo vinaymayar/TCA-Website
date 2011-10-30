@@ -113,7 +113,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
   <div class="content">
     <div class="content_resize"><!-- InstanceBeginEditable name="mainbar" -->
     	<div class="mainbar">
-    		
+        <div class="textbox">
     			<h2><span>Mission</span><br /> Statement:</h2>
     			<div class="clr"></div>
     				<p><strong>"Our mission is to promote conversation between the youth of Afghanistan and America and to foster understanding, respect, and a sense of global community among the leaders of the future. Teen Connection: Afghanistan brings teenagers together from two different cultures through social networking, email, and video. TCA members in both countries work as equals to share their cultures and worldviews, and, in doing so, lay the foundation for a more understanding society of tomorrow."</strong></p>
@@ -122,6 +122,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     			<div class="clr"></div>
     			<p><strong>Teen Connection Afghanistan was created in acknowledgement that while many adults may become set in their ways and beliefs, kids are more capable of abolishing preconceived notions of people and cultures.  Children can learn to be more understanding and accepting of people different from themselves, but only if they are allowed the opportunity to interact and build relationships.  From this notion comes TCA's core concept: that teenagers from America and Afghanistan if given the chance to speak to one another and to learn from one another, will as adults, be more invested in one another's wellbeing.</strong></p>
     			<div class="clr"></div>
+                </div>
     		</div>
     <!-- InstanceEndEditable -->
     	<div class="sidebar">

@@ -4,7 +4,7 @@ body {
 	margin:0;
 	padding:0;
 	width:100%;
-	color:#929292;
+	color:#000001;
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
 }
 html, .main {
@@ -179,10 +179,20 @@ h1 small {
 	margin:0;
 	padding:18px;
 	float:left;
-	width:680px;
+	width:660px;
 	background:#FFE4B5;
 }
-.content .mainbar h2 {
+
+.content .mainbar .textbox{
+	background:#F4A460;
+	margin:0;
+	padding:18px;
+	webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+
+.content .mainbar .textbox h2 {
 	margin-bottom:0;
 	font-size:30px;
 	line-height:1.2em;
