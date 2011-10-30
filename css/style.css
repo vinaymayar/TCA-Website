@@ -133,7 +133,7 @@ h1 small {
 	margin:0 auto;
 	padding:0 0 20px;
 	height:50px;
-	background:#C71585;
+	background:#fff;
 }
 .menu_nav ul {
 	list-style:none;
@@ -143,26 +143,28 @@ h1 small {
 }
 .menu_nav ul li {
 	margin:0;
-	padding:0;
+	padding:10px;
 	float:left;
 }
 .menu_nav ul li a {
 	display:block;
 	margin:0;
 	padding:16px 0;
-	width:160px;
+	width:150px;
 	font-size:13px;
 	line-height:18px;
 	font-weight:bold;
 	color:#fff;
 	text-decoration:none;
 	text-align:center;
+	background-color:#C71585;
+
 }
 .menu_nav ul li.active a, .menu_nav ul li a:hover {
 	text-decoration:none;
 	color:#fff;
 	font-weight:bold;
-	background:url(../images/menu_a_lighter.png) repeat-x left top;
+	background-color:#DD73B6;
 }
 .content {
 	padding:0;
