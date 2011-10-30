@@ -12,10 +12,9 @@ html, .main {
 	margin:0;
 }
 .main {
-	background-color:#03F;
-	background:#8B1C62;
-;
-
+	background-color:#F9D185;
+	/*background:#8B1C62;*//
+	
 }
 .clr {
 	clear:both;
@@ -53,6 +52,7 @@ a {
 .header {
 	/*background-color:#CF9;
 	*/
+	background-image:url(../../files/images/dfsdfhju.png);
 }
 .header_resize {
 	margin:0 auto;
@@ -134,7 +134,7 @@ h1 small {
 	margin:0 auto;
 	padding:0 0 20px;
 	height:50px;
-	background:#FFE4B5;
+	background-color:#F9D185;
 }
 .menu_nav ul {
 	list-style:none;
@@ -184,12 +184,12 @@ h1 small {
 }
 
 .content .mainbar .textbox{
-	background:#F4A460;
+	background-color:#F9D185;
 	margin:0;
 	padding:18px;
 	webkit-border-radius: 15px;
--moz-border-radius: 15px;
-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 
 .content .mainbar .textbox h2 {
@@ -345,7 +345,7 @@ p.infopost a.com span {
 }
 .fbg {
 	border-top:4px solid #1d1d1d;
-	background:#2a2a2a;
+	/*background:#2a2a2a;*/
 }
 .fbg_resize {
 	margin:0 auto;
@@ -486,7 +486,7 @@ ol li .send {
 	float:left;
 }
 .footer {
-	background:#1d1d1d;
+	/*background:#1d1d1d;*/
 }
 .footer_resize {
 	margin:0 auto;

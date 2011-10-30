@@ -78,7 +78,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       <div class="menu_nav">
         <ul>
         	<!-- InstanceBeginEditable name="navigation bar" -->
-			
+			<!--
         		<li><a href="./"><span>Home Page</span></a></li>
         		<li><a href="donate.php"><span>Donate</span></a></li>
 <?php
@@ -92,10 +92,9 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 				}
 				?>
                 <li><a href="contribute.php"><span>What You Can Do</span></a></li>
-        		<li class="active"><a href="about.php"><span>About Us</span></a></li>
+        		<li><a href="about.php"><span>About Us</span></a></li>
         		<li><a href="contact.php"><span>Contact Us</span></a></li>
-        		
-			<!-- InstanceEndEditable -->
+        	--><!-- InstanceEndEditable -->
 
         	</ul>
 		</div>
