@@ -66,7 +66,6 @@ a {
 	float:left;
 	width:auto;
 	height:auto;
-	background-image:url(../images/banner%201.jpg)
 }
 .topbar{
 	/*background-color:#CCC	
@@ -75,7 +74,7 @@ a {
 h1 {
 	margin:0;
 	padding:44px 0 0;
-	font-size:36px;
+	font-size:48px;
 	font-weight:normal;
 	line-height:1.2em;
 	text-transform:none;

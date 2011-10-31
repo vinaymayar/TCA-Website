@@ -64,8 +64,9 @@
       </div>
       <?php } ?>
       <div class="logo">
+	  	<img src="../images/homebanner_small.png"/>
         <h1>
-        	<p>Teen Connection: Afghanistan</p>
+        	<p class="title">Teen Connection: Afghanistan</p>
         	<!--<h2><i>Website still under construction</i></h2>-->
         </h1>
       </div>
@@ -149,31 +150,7 @@
     </div>
     -->
   </div>
-  <div class="fbg">
-    <div class="fbg_resize">
-      <div class="col c1">
-        <h2><span>Image</span> Gallery</h2>
-        <p>Our image gallery is currently empty.</p>
-        <!--
-        <a href="#"><img src="../images/gal1.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal2.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal3.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal4.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal5.jpg" width="75" height="75" alt="" class="gal" /></a> <a href="#"><img src="../images/gal6.jpg" width="75" height="75" alt="" class="gal" /></a>
-        -->
-        </div>
-      <div class="col c2">
-        <h2><span>Charity</span> Overview</h2>
-        <p>Teen Connection: Afghanistan offers children in Afghanistan the opportunity to communicate with high-school and college students, giving them access to information and culture they would not otherwise encounter.  TCA supplements efforts to distribute computers in Afghanistan with the chance to talk to real people, for pen-pal-like mutual learning.</p>
-        <ul class="fbg_ul">
-          <li><a href="about.html">Click here to learn more about TCA.</a></li>
-        </ul>
-      </div>
-      <div class="col c3">
-        <h2><span>Contact</span> Us</h2>
-        <p>If you have any questions about TCA, its mission, or how you can help, feel free to contact us:</p>
-        <p class="contact_info"> <!--<span>Address:</span> 1458 TemplateAccess, USA<br />
-          <span>Telephone:</span> +123-1234-5678<br />
-          <span>FAX:</span> +458-4578<br />
-          <span>Others:</span> +301 - 0125 - 01258<br />
-          <span>E-mail:</span> --><a href="mailto:activistny@aol.com">Click Here to Email Us</a> </p>
-      </div>
+
       <div class="clr"></div>
     </div>
   </div>

@@ -66,7 +66,7 @@ a {
 	padding:0;
 }
 .header {
-
+	padding:25px;
 	border:20px #F9D185 solid;
 
 }
@@ -80,12 +80,17 @@ a {
 	float:left;
 	width:auto;
 	height:auto;
-	background-image:url(../files/images/banner%201.jpg)
+	
 }
 .topbar{
 	/*background-color:#CCC	
 	*/
 }
+
+.title{
+	
+}
+
 h1 {
 	margin:0;
 	padding:44px 0 0;
