@@ -105,7 +105,6 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       <!-- InstanceEndEditable -->
 	  </div>
       <div class="clr"></div>
-    </div>
   </div>
   <div class="content">
     <div class="content_resize"><!-- InstanceBeginEditable name="mainbar" -->
@@ -185,13 +184,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       <div class="clr"></div>
     </div>
   </div>
-  <div class="footer">
-    <div class="footer_resize">
-      <p class="lf">&copy; Copyright <a href="#">MyWebSite</a>.</p>
-      <p class="rf">Design by Dream <a href="http://www.dreamtemplate.com/">Web Templates</a></p>
-      <div style="clear:both;"></div>
-    </div>
-  </div>
+  
+</div>
 </div>
 </body>
 <!-- InstanceEnd --></html>

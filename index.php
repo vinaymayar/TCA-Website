@@ -9,14 +9,14 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="google-site-verification" content="q99_gDx68tRHS6Vb7FnLbdoyFk7t60ZBBs6YkoR0oGY" />
 <link href="./css/style.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="../css/coin-slider.css" /> 
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" /> 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<script type="text/javascript" src="../js/cufon-yui.js"></script>
-<script type="text/javascript" src="../js/cufon-times-700.js"></script>
-<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="../js/script.js"></script>
-<script type="text/javascript" src="../js/coin-slider.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-times-700.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
 </head>
 <body>
 <div class="main">
@@ -105,7 +105,6 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       <!-- InstanceEndEditable -->
 	  </div>
       <div class="clr"></div>
-    </div>
   </div>
   <div class="content">
     <div class="content_resize"><!-- InstanceBeginEditable name="mainbar" -->
@@ -185,13 +184,8 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       <div class="clr"></div>
     </div>
   </div>
-  <div class="footer">
-    <div class="footer_resize">
-      <p class="lf">&copy; Copyright <a href="#">MyWebSite</a>.</p>
-      <p class="rf">Design by Dream <a href="http://www.dreamtemplate.com/">Web Templates</a></p>
-      <div style="clear:both;"></div>
-    </div>
-  </div>
+  
+</div>
 </div>
 </body>
 <!-- InstanceEnd --></html>
