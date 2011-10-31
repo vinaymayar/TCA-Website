@@ -110,7 +110,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
     <div class="content_resize"><!-- InstanceBeginEditable name="mainbar" -->
     	<div class="mainbar">
         <div class="textbox">
-    			<h2><span>Mission</span><br /> Statement:</h2>
+        	<h2><span>Mission</span><br /> Statement:</h2>
     			<div class="clr"></div>
     				<p><strong>"Our mission is to promote conversation between the youth of Afghanistan and America and to foster understanding, respect, and a sense of global community among the leaders of the future. Teen Connection: Afghanistan brings teenagers together from two different cultures through social networking, email, and video. TCA members in both countries work as equals to share their cultures and worldviews, and, in doing so, lay the foundation for a more understanding society of tomorrow."</strong></p>
     			<div class="clr"></div>

@@ -4,7 +4,7 @@ body {
 	width:100%;
 	color:#000001;
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
-	background:#8B1C62;
+	background-color:#8B1C62;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -12,7 +12,7 @@ html, .main {
 	padding:0;
 	width: 1020px;
 	position:static;
-		margin-left: auto;
+	margin-left: auto;
 	margin-right: auto;
 
 
@@ -67,7 +67,7 @@ a {
 .header {
 	/*background-color:#CF9;
 	*/
-	background:#F9D185;
+	background-color:#F7E4AA;
 }
 .header_resize {
 	margin:0 auto;
@@ -149,7 +149,7 @@ h1 small {
 	margin:0 auto;
 	padding:0 0 20px;
 	height:50px;
-	background-color:#F9D185;
+	background-color:#F7E4AA;
 }
 .menu_nav ul {
 	list-style:none;
@@ -194,15 +194,19 @@ h1 small {
 	margin:0;
 	padding:18px;
 	float:left;
-	background:#FFE4B5;
+	background-color:#F7E4AA;
 }
 
 .content .mainbar .textbox{
-	background-color:#F9D185;
+	/*background-color:#F9D185;*/
 	padding:18px;
 	webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+}
+
+.textbox{
+	background-color:#FFCA78;
 }
 
 .content .mainbar .textbox h2 {
