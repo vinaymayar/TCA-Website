@@ -91,7 +91,7 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 				}
 				?>
                 <li><a href="contribute.php"><span>What You Can Do</span></a></li>
-        		<li><a href="about.php"><span>About Us</span></a></li>
+        		<li class="active"><a href="./"><span>About Us</span></a></li>
         		<li><a href="contact.php"><span>Contact Us</span></a></li>
         	<!-- InstanceEndEditable -->
 
