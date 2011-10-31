@@ -99,9 +99,6 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       <div class="clr">;</div>
 	  <div class="topbar">
       <!-- InstanceBeginEditable name="topbar" -->
-      <div class="slider">
-        <div class="clr"></div>
-      	</div>
       <!-- InstanceEndEditable -->
 	  </div>
       <div class="clr"></div>
