@@ -4,13 +4,13 @@ body {
 	width:100%;
 	color:#000001;
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
-	background-color:#8B1C62;
+	background:#8B1C62;
 	margin-left: auto;
 	margin-right: auto;
 }
 html, .main {
 	padding:0;
-	width: 960px;
+	width: 1020px;
 	position:static;
 		margin-left: auto;
 	margin-right: auto;
@@ -18,9 +18,18 @@ html, .main {
 
 }
 .main {
+	background:#FFE4B5;
+	
+}
+/*
+.main .main2 {
+	padding:10px;
+	width: 1000px;
+position:static;
 	background:#8B1C62;
 	
 }
+*/
 .clr {
 	clear:both;
 	padding:0;
@@ -184,13 +193,11 @@ h1 small {
 	margin:0;
 	padding:18px;
 	float:left;
-	width:924px;
 	background:#FFE4B5;
 }
 
 .content .mainbar .textbox{
 	background-color:#F9D185;
-	margin:0;
 	padding:18px;
 	webkit-border-radius: 15px;
 	-moz-border-radius: 15px;

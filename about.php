@@ -185,7 +185,6 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       <div class="clr"></div>
     </div>
   </div>
-  
 </div>
 </div>
 </body>
