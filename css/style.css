@@ -204,7 +204,7 @@ h1 small {
 .content .mainbar {
 	margin:0;
 	padding:0;
-	float:left;
+	float:center;
 
 	background-color:#F7E4AA;
 }
