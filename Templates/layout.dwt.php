@@ -43,7 +43,7 @@
     </tr>
   </table>
 </form>
-<p style="margin-bottom:0"><a href="join.php">Create an Account</a></p>
+<p style="margin-bottom:0"><a href="register.php">Create an Account</a></p>
       </div>
       <?php
 	}
