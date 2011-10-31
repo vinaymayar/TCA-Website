@@ -13,6 +13,7 @@ html, .main {
 	padding:0;
 	margin:0;
 	width: 1000px;
+	float:center;
 }
 .main {
 	background:#8B1C62;

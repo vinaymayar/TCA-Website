@@ -19,7 +19,6 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 <script type="text/javascript" src="../js/coin-slider.min.js"></script>
 </head>
 <body>
-<div id="container"></div>
 <div class="main">
   <div class="header">
     <div class="header_resize">
