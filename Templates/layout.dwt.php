@@ -97,8 +97,8 @@
     			<div class="clr"></div>
     			<div class="img"><img src="../images/img1.jpg" width="198" height="208" alt="" class="fl" /></div>
     			<div class="post_content">
-    				<p>a</p>
-    				<p><strong>a</p>
+    				<p>&nbsp;</p>
+    				<p><strong></p>
     				<p class="spec"><a href="#" class="rm">Read more</a></p>
     				</div>
     			<div class="clr"></div>
