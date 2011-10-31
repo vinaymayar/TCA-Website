@@ -69,10 +69,13 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       <?php } ?>
       <div class="logo">
 	  	<img src="images/homebanner_small.png"/>
-        <h1>
-        	<p class="title">Teen Connection: Afghanistan</p>
-        	<!--<h2><i>Website still under construction</i></h2>-->
-        </h1>
+<div style="position:relative;">
+<img src="hello.jpg" style="position:absolute;left:0;top:0;width:100%;height:100%;z-index:-99;" />
+
+<span style="position:absolute; left;1;top:-110px; left: 137px; width: 495px; height: 120px;">
+<h1>Teen Connection: Afghanistan</h1></span>
+
+      </div>
       </div>
       <div class="clr"></div>
       <div class="menu_nav">

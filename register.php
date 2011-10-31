@@ -139,10 +139,10 @@ else {
       <?php } ?>
       <div class="logo">
 	  	<img src="images/homebanner_small.png"/>
-        <h1>
-        	<p class="title">Teen Connection: Afghanistan</p>
-        	<!--<h2><i>Website still under construction</i></h2>-->
-        </h1>
+
+<h1><span style="position:absolute; left;1;top:55px; left: 249px; width: 312px; height: 120px;">
+Teen Connection: Afghanistan</span></h1>
+
       </div>
       <div class="clr"></div>
       <div class="menu_nav">

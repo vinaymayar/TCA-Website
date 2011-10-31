@@ -93,8 +93,8 @@ a {
 
 h1 {
 	margin:0;
-	padding:44px 0 0;
-	font-size:36px;
+	padding:0 0;
+	font-size:33px;
 	font-weight:normal;
 	line-height:1.2em;
 	text-transform:none;
@@ -204,7 +204,7 @@ h1 small {
 .content .mainbar {
 	margin:0;
 	padding:0;
-	float:left;
+	float:center;
 
 	background-color:#F7E4AA;
 }
