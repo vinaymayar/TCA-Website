@@ -200,18 +200,17 @@ h1 small {
 	margin:0;
 	padding:0;
 	float:left;
-<<<<<<< HEAD
+
 	background-color:#F7E4AA;
 }
 
 .content .mainbar .textbox{
 	/*background-color:#F9D185;*/
-=======
+
 }
 
 .content .mainbar .textbox{
 	background:#FFCA78;
->>>>>>> 263408665bed6bdc0b4ecfc2bd2f7c712e8b610b
 	padding:18px;
 	webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
