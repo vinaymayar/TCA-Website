@@ -10,7 +10,7 @@ body {
 }
 html, .main {
 	padding:0;
-	width: 1020px;
+	width: 1060px;
 	position:static;
 		margin-left: auto;
 	margin-right: auto;
@@ -19,8 +19,10 @@ html, .main {
 }
 .main {
 	background:#FFE4B5;
-	
+	/*border:20px solid ;*/
+	position:relative;
 }
+
 /*
 .main .main2 {
 	padding:10px;
@@ -148,7 +150,6 @@ h1 small {
 	margin:0 auto;
 	padding:0 0 20px;
 	height:50px;
-	background-color:#F9D185;
 }
 .menu_nav ul {
 	list-style:none;
@@ -197,7 +198,7 @@ h1 small {
 }
 
 .content .mainbar .textbox{
-	background-color:#F9D185;
+	background:#F9D185;
 	padding:18px;
 	webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
@@ -356,7 +357,6 @@ p.infopost a.com span {
 	float:left;
 }
 .fbg {
-	border-top:4px solid #1d1d1d;
 	/*background:#2a2a2a;*/
 }
 .fbg_resize {
