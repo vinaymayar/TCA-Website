@@ -4,18 +4,19 @@ body {
 	margin:0;
 	padding:0;
 	width:100%;
-	color:#929292;
+	color:#000001;
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+	background-color:#8B1C62;
+
 }
 html, .main {
 	padding:0;
 	margin:0;
+	width: 1000px;
 }
 .main {
-	background-color:#03F;
 	background:#8B1C62;
-;
-
+	
 }
 .clr {
 	clear:both;
@@ -53,6 +54,7 @@ a {
 .header {
 	/*background-color:#CF9;
 	*/
+	background:#F9D185;
 }
 .header_resize {
 	margin:0 auto;
@@ -134,7 +136,7 @@ h1 small {
 	margin:0 auto;
 	padding:0 0 20px;
 	height:50px;
-	background:#FFE4B5;
+	background-color:#F9D185;
 }
 .menu_nav ul {
 	list-style:none;
@@ -179,10 +181,20 @@ h1 small {
 	margin:0;
 	padding:18px;
 	float:left;
-	width:680px;
+	width:924px;
 	background:#FFE4B5;
 }
-.content .mainbar h2 {
+
+.content .mainbar .textbox{
+	background-color:#F9D185;
+	margin:0;
+	padding:18px;
+	webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.content .mainbar .textbox h2 {
 	margin-bottom:0;
 	font-size:30px;
 	line-height:1.2em;
@@ -335,7 +347,7 @@ p.infopost a.com span {
 }
 .fbg {
 	border-top:4px solid #1d1d1d;
-	background:#2a2a2a;
+	/*background:#2a2a2a;*/
 }
 .fbg_resize {
 	margin:0 auto;
@@ -476,7 +488,7 @@ ol li .send {
 	float:left;
 }
 .footer {
-	background:#1d1d1d;
+	/*background:#1d1d1d;*/
 }
 .footer_resize {
 	margin:0 auto;

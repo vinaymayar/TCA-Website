@@ -6,14 +6,16 @@ body {
 	width:100%;
 	color:#000001;
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+	background-color:#8B1C62;
+
 }
 html, .main {
 	padding:0;
 	margin:0;
+	width: 1000px;
 }
 .main {
-	background-color:#F9D185;
-	/*background:#8B1C62;*//
+	background:#8B1C62;
 	
 }
 .clr {
@@ -52,7 +54,7 @@ a {
 .header {
 	/*background-color:#CF9;
 	*/
-	background-image:url(../../files/images/dfsdfhju.png);
+	background:#F9D185;
 }
 .header_resize {
 	margin:0 auto;
