@@ -1,19 +1,21 @@
 /* Design by http://www.dreamtemplate.com */
 @charset "utf-8";
 body {
-	margin:0;
-	padding:0;
 	width:100%;
 	color:#000001;
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
 	background-color:#8B1C62;
-
+	margin-left: auto;
+	margin-right: auto;
 }
 html, .main {
 	padding:0;
-	margin:0;
 	width: 960px;
 	position:static;
+		margin-left: auto;
+	margin-right: auto;
+
+
 }
 .main {
 	background:#8B1C62;
@@ -67,7 +69,7 @@ a {
 	float:left;
 	width:auto;
 	height:auto;
-	background-image:url(../images/banner%201.jpg)
+	background-image:url(../files/images/banner%201.jpg)
 }
 .topbar{
 	/*background-color:#CCC	
@@ -199,7 +201,7 @@ h1 small {
 	margin-bottom:0;
 	font-size:30px;
 	line-height:1.2em;
-	background:url(../images/dot.gif) repeat-x left bottom;
+	background:url(../files/images/dot.gif) repeat-x left bottom;
 }
 .content .mainbar div.img {
 	padding:12px 0 0;
@@ -234,7 +236,7 @@ h1 small {
 	padding:0 20px 24px;
 }
 .content .sidebar h2 {
-	background:url(../images/dot.gif) repeat-x left bottom;
+	background:url(../files/images/dot.gif) repeat-x left bottom;
 }
 ul.sb_menu, ul.ex_menu {
 	margin:0;
@@ -307,7 +309,7 @@ p.infopost a.com span {
 	color:#fff;
 	text-decoration:none;
 	text-align:right;
-	background:url(../images/readmore.gif) repeat-x left top;
+	background:url(../files/images/readmore.gif) repeat-x left top;
 }
 .content .mainbar .post_content a.rm:hover {
 	text-decoration:underline;
@@ -318,7 +320,7 @@ p.infopost a.com span {
 	font-size:11px;
 	color:#929292;
 	text-align:left;
-	background:url(../images/dot.gif) repeat-x left top;
+	background:url(../files/images/dot.gif) repeat-x left top;
 }
 .content p.pages span, .content p.pages a {
 	padding:8px 12px;
@@ -397,7 +399,7 @@ p.infopost a.com span {
 	padding:2px 0 2px 12px;
 	color:#6e6e6e;
 	text-decoration:none;
-	background:url(../images/li.gif) no-repeat left center;
+	background:url(../files/images/li.gif) no-repeat left center;
 }
 .fbg .fbg_ul li a:hover {
 	color:#7fbc1e;
@@ -468,7 +470,7 @@ ol li .send {
 	margin:0;
 	padding:0;
 	float:left;
-	background:url(../images/search_bg.gif) no-repeat left top;
+	background:url(../files/images/search_bg.gif) no-repeat left top;
 }
 #formsearch input.editbox_search {
 	margin:0;
