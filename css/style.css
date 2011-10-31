@@ -356,16 +356,16 @@ p.infopost a.com span {
 	float:left;
 }
 .fbg {
-	/*background:#2a2a2a;*/
+padding-top:20px;
 }
 .fbg_resize {
 	margin:0 auto;
 	width:920px;
 	padding:16px 20px;
-	color:#6e6e6e;
+	color:#000001;
 }
 .fbg h2 {
-	color:#fff;
+	color:#000001;
 	padding-bottom:24px;
 }
 .fbg img.gal {
@@ -374,7 +374,7 @@ p.infopost a.com span {
 	border:none;
 }
 .fbg .col {
-	margin:0;
+	margin-top:18px;
 	float:left;
 }
 .fbg .c1 {
