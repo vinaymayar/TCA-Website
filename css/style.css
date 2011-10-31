@@ -18,8 +18,8 @@ html, .main {
 
 }
 .main {
-	background:#FFE4B5;
-	/*border:20px solid ;*/
+	background:#F7E4AA;
+	/*border:#FFE4B5 20px solid ;*/
 	position:relative;
 }
 
@@ -41,7 +41,6 @@ position:static;
 	line-height:0;
 }
 #container {
-    background: #800000;
     width: 80%;
     margin: 0 auto;
     position: relative;
@@ -66,9 +65,7 @@ a {
 	padding:0;
 }
 .header {
-	/*background-color:#CF9;
-	*/
-	background:#F9D185;
+	border:20px #F9D185 solid;
 }
 .header_resize {
 	margin:0 auto;
@@ -184,21 +181,23 @@ h1 small {
 }
 .content {
 	padding:0;
+	background:#F7E4AA;
+	
+		position:relative;
+
 }
 .content_resize {
 	margin:0 auto;
-	padding:18px 0;
-	width:960px;
+	padding:18px;
 }
 .content .mainbar {
 	margin:0;
-	padding:18px;
+	padding:0;
 	float:left;
-	background:#FFE4B5;
 }
 
 .content .mainbar .textbox{
-	background:#F9D185;
+	background:#FFCA78;
 	padding:18px;
 	webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
