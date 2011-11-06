@@ -1,5 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<?php
+$url = $_SERVER['PHP_SELF'];
+?>
 <head>
 <title>Teen Connection: Afghanistan</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -72,9 +75,24 @@ Teen Connection: Afghanistan</span></h1>
       </div>
       <div class="menu_nav">
         <ul>
-        	<!-- TemplateBeginEditable name="navigation bar" -->
-			[button 1] [button 2]
-			<!-- TemplateEndEditable -->
+				<li <?php if($url=="/index.php") echo("class='active'")?> ><a href="./"><span>Home</span></a></li>
+        		<li <?php if($url=="/mission.php") echo("class='active'")?>><a href="mission.php"><span>Mission</span></a></li>
+                <li <?php if($url=="/members.php" || $url=="/register.php") echo("class='active'")?> >
+				<?php
+                if(isset($_COOKIE['ID_my_site']))
+                {
+				echo("<a href='members.php'><span>Your Account</span></a>");
+                }
+                else
+                {
+					echo("<a href='register.php'><span>Join TCA</span></a>");
+				}
+				?> </li>
+                <li <?php if($url=="/about.php") echo("class='active'")?>><a href="about.php"><span>About Us</span></a></li>
+        		<li <?php if($url=="/blog.php") echo("class='active'")?>><a href="blog.php"><span>Blogs</span></a></li>
+        		<li <?php if($url=="/gallery.php") echo("class='active'")?>><a href="gallery.php"><span>Gallery</span></a></li>
+				<li <?php if($url=="/contact.php") echo("class='active'")?>><a href="contact.php"><span>Contact Us</span></a></li>
+				<li <?php if($url=="/partners.php") echo("class='active'")?>><a href="partners.php"><span>Partners</span></a></li>			
 
         	</ul>
 		</div>

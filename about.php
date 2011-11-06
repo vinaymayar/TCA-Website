@@ -4,6 +4,9 @@ session_start();
 $_SESSION['url'] = $_SERVER['REQUEST_URI'];
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/layout.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<?php
+$url = $_SERVER['PHP_SELF'];
+?>
 <head>
 <title>Teen Connection: Afghanistan</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -76,25 +79,24 @@ Teen Connection: Afghanistan</span></h1>
       </div>
       <div class="menu_nav">
         <ul>
-        	<!-- InstanceBeginEditable name="navigation bar" -->
-			
-        		<li><a href="./"><span>Home Page</span></a></li>
-        		<li><a href="donate.php"><span>Donate</span></a></li>
-<?php
+				<li <?php if($url=="/index.php") echo("class='active'")?> ><a href="./"><span>Home</span></a></li>
+        		<li <?php if($url=="/mission.php") echo("class='active'")?>><a href="mission.php"><span>Mission</span></a></li>
+                <li <?php if($url=="/members.php" || $url=="/register.php") echo("class='active'")?> >
+				<?php
                 if(isset($_COOKIE['ID_my_site']))
                 {
-				echo("<li><a href='members.php'><span>Your Account</span></a></li>");
+				echo("<a href='members.php'><span>Your Account</span></a>");
                 }
                 else
                 {
-					echo("<li><a href='register.php'><span>Join TCA</span></a></li>");
+					echo("<a href='register.php'><span>Join TCA</span></a>");
 				}
-				?>
-                <li><a href="contribute.php"><span>What You Can Do</span></a></li>
-        		<li class="active"><a href="about.php"><span>About Us</span></a></li>
-        		<li><a href="contact.php"><span>Contact Us</span></a></li>
-        		
-			<!-- InstanceEndEditable -->
+				?> </li>
+                <li <?php if($url=="/about.php") echo("class='active'")?>><a href="about.php"><span>About Us</span></a></li>
+        		<li <?php if($url=="/blog.php") echo("class='active'")?>><a href="blog.php"><span>Blogs</span></a></li>
+        		<li <?php if($url=="/gallery.php") echo("class='active'")?>><a href="gallery.php"><span>Gallery</span></a></li>
+				<li <?php if($url=="/contact.php") echo("class='active'")?>><a href="contact.php"><span>Contact Us</span></a></li>
+				<li <?php if($url=="/partners.php") echo("class='active'")?>><a href="partners.php"><span>Partners</span></a></li>			
 
         	</ul>
 		</div>
