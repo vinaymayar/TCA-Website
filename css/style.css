@@ -18,7 +18,7 @@ html, .main {
 
 }
 .main {
-	background:#F7E4AA;
+	background-color:#F7E4AA;
 	/*border:#FFE4B5 20px solid ;*/
 	position:relative;
 }
@@ -162,20 +162,31 @@ h1 small {
 .menu_nav ul {
 	list-style:none;
 	padding:0;
-	height:50px;
-	float:left;
+	height:33px;
+	width:700px;
+	position:absolute;
+	left:50%;
+	top:250px;
+	margin-left:-265px;	
 }
 .menu_nav ul li {
-	margin:0;
-	padding:10px;
+	margin:10;
+	padding-left:2px;
+	padding-right:2px;
+	padding-top:5px;
+	padding-bottom:5px;
 	float:left;
+	
+	height:25px;
 }
 .menu_nav ul li a {
 	display:block;
 	margin:0;
-	padding:16px 0;
-	width:140px;
-	font-size:13px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:11px;
 	line-height:18px;
 	font-weight:bold;
 	color:#fff;
@@ -193,8 +204,8 @@ h1 small {
 .content {
 	padding:0;
 	background:#F7E4AA;
-	
-		position:relative;
+	margin-top:100px;
+	position:relative;
 
 }
 .content_resize {
@@ -211,6 +222,7 @@ h1 small {
 
 .content .mainbar .textbox{
 	/*background-color:#F9D185;*/
+	
 
 }
 
@@ -220,6 +232,7 @@ h1 small {
 	webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+	/*margin-top:150px;*/
 }
 
 .textbox{
@@ -564,4 +577,11 @@ loginstyle {
 }
 .main .header .header_resize .logo h1 a {
 	font-size: 44px;
+}
+
+.yellow_bar{
+	width:800px;
+	height:7px;
+	background:#FAD702;
+	margin-left:45px;	
 }

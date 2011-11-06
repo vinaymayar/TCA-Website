@@ -68,18 +68,17 @@ $_SESSION['url'] = $_SERVER['REQUEST_URI'];
       </div>
       <?php } ?>
       <div class="logo">
-	  	<img src="images/homebanner_small.png"/>
+	  	<img border="" src="images/homebanner_small.png"/>
 
 <h1><span style="position:absolute; left;1;top:55px; left: 249px; width: 312px; height: 120px;">
 Teen Connection: Afghanistan</span></h1>
 
       </div>
-      <div class="clr"></div>
       <div class="menu_nav">
         <ul>
         	<!-- InstanceBeginEditable name="navigation bar" -->
-        		<li><a href="./"><span>Home Page</span></a></li>
-        		<li><a href="donate.php"><span>Donate</span></a></li>
+        		<li><a href="./"><span>Home</span></a></li>
+        		<li><a href="donate.php"><span>Mission</span></a></li>
 <?php
                 if(isset($_COOKIE['ID_my_site']))
                 {
@@ -90,9 +89,11 @@ Teen Connection: Afghanistan</span></h1>
 					echo("<li><a href='register.php'><span>Join TCA</span></a></li>");
 				}
 				?>
-                <li><a href="contribute.php"><span>What You Can Do</span></a></li>
-        		<li class="active"><a href="./"><span>About Us</span></a></li>
-        		<li><a href="contact.php"><span>Contact Us</span></a></li>
+                <li><a href="contribute.php"><span>About Us</span></a></li>
+        		<li class="active"><a href="./"><span>Blogs</span></a></li>
+        		<li><a href="contact.php"><span>Gallery</span></a></li>
+				<li><a href="donate.php"><span>Contact Us</span></a></li>
+				<li><a href="donate.php"><span>Partners</span></a></li>
         	<!-- InstanceEndEditable -->
 
         	</ul>
@@ -113,8 +114,8 @@ Teen Connection: Afghanistan</span></h1>
     			<div class="clr"></div>
     			<h2><span>Our</span> <br />Purpose:</h2>
     			<div class="clr"></div>
-    			<p><strong>Teen Connection Afghanistan was created in acknowledgement that while many adults may become set in their ways and beliefs, kids are more capable of abolishing preconceived notions of people and cultures.  Children can learn to be more understanding and accepting of people different from themselves, but only if they are allowed the opportunity to interact and build relationships.  From this notion comes TCA's core concept: that teenagers from America and Afghanistan if given the chance to speak to one another and to learn from one another, will as adults, be more invested in one another's wellbeing.</strong></p>
-    			<div class="clr"></div>
+    			<p><strong>Teen Connection Afghanistan was created in acknowledgement that while many adults may become set in their ways and beliefs, kids are more capable of abolishing preconceived notions of people and cultures.  Children can learn to be more understanding and accepting of people different from themselves, but only if they are allowed the opportunity to interact and build relationships.  From this notion comes TCA's core concept: that teenagers from America and Afghanistan if given the chance to speak to one another and to learn from one another, will as adults, be more invested in one another's wellbeing.</strong>    			</p>
+    			<div class="yellow_bar"></div>
                 </div>
     		</div>
     <!-- InstanceEndEditable -->

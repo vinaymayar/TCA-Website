@@ -4,7 +4,7 @@ body {
 	width:100%;
 	color:#000001;
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
-	background-color:#4E1025;
+	background-color:#CE421A;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -18,14 +18,14 @@ html, .main {
 
 }
 .main {
-	background:#F7E4AA;
+	background:#FDE1A0;
 	/*border:#FFE4B5 20px solid ;*/
 	position:relative;
 }
 
 /*
 .main .main2 {
-	padding:10px;
+	padding:0;
 	width: 1000px;
 position:static;
 	background:#8B1C62;
@@ -66,20 +66,22 @@ a {
 	padding:0;
 }
 .header {
-	padding:25px;
-	border:20px #F9D185 solid;
+	padding: 5px;
+	border-top: 1px solid #000003;
+	border-left: 1px solid #000003;
+	border-right: 1px solid #000003;
 
 }
 .header_resize {
-	margin:0 auto;
+	margin:0 5px;
 	padding:0;
 	width:960px;
 }
 .logo {
 	padding:0;
 	float:left;
-	width:auto;
-	height:auto;
+	width: 303px;
+	height: 204px;
 	
 }
 .topbar{
@@ -93,8 +95,8 @@ a {
 
 h1 {
 	margin:0;
-	padding:0 0;
-	font-size:33px;
+	padding:44px 0 0;
+	font-size:36px;
 	font-weight:normal;
 	line-height:1.2em;
 	text-transform:none;
@@ -192,14 +194,14 @@ h1 small {
 }
 .content {
 	padding:0;
-	background:#F7E4AA;
+	background:#FDE1A0;
 	
 		position:relative;
 
 }
 .content_resize {
-	margin:0 auto;
-	padding:18px;
+	margin:0 5px;
+	padding: 0;
 }
 .content .mainbar {
 	margin:0;
