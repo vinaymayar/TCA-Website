@@ -184,8 +184,7 @@ Teen Connection: Afghanistan</span></h1>
 
 
 <h3>Register</h3>
-
-
+<div class="form">
 <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
     <p><input type="text" name="firstname" value="<?php if (isset($_POST['firstname'])) echo $_POST['firstname']; ?>" size="30" maxlength="30" /> <small>First Name</small></p>
     
@@ -202,6 +201,10 @@ Teen Connection: Afghanistan</span></h1>
     <p><input type="submit" name="submit" value="Register" /></p>
     <input type="hidden" name="submitted" value="TRUE" />
 </form>
+</div>
+<div class="img">
+<img border="" src="images/we_want_you.png" width="292" height="334"/>
+</div>
 </div>
 </div>
 <!-- InstanceEndEditable -->

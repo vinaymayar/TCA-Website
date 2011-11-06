@@ -250,9 +250,12 @@ a:hover{
 	background-color:#F7E4AA;
 }
 
-.content .mainbar .textbox{
-	/*background-color:#F9D185;*/
-	
+.content .mainbar .textbox .form{
+float:left;	
+
+}
+.content .mainbar .textbox .img{
+float:right;	
 
 }
 
