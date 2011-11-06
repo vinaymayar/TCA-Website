@@ -223,10 +223,11 @@ h1 small {
 }
 
 .menu_nav ul li a:active {
+	font-weight:bold;
 	background-color:#AB1649;
 }
 
-a:hover{
+.menu_nav ul li a:hover {
 	font-weight:bold;
 	background-color:#8A1B2C;
 }
