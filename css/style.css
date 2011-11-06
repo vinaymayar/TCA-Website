@@ -23,6 +23,7 @@ html, .main {
 	position:relative;
 }
 
+
 /*
 .main .main2 {
 	padding:10px;
@@ -33,6 +34,26 @@ position:static;
 	
 }
 */
+
+.bottom_bar{
+	height:200px;
+	margin-left:40px;
+	margin-right:40px;
+}
+
+.bottom_bar .bottom_box{
+	float:left;
+	width:33%;
+	height:200px;
+	
+}
+
+.bottom_bar .bottom_box h2{
+	font-size:32pt;
+	padding:10%;
+	color:#A33F3E;
+}
+
 .clr {
 	clear:both;
 	padding:0;
@@ -192,15 +213,24 @@ h1 small {
 	color:#fff;
 	text-decoration:none;
 	text-align:center;
-	background-color:#C71585;
-
+	background-color:#BE5D8D;
 }
-.menu_nav ul li.active a, .menu_nav ul li a:hover {
+.menu_nav ul li.active a {
 	text-decoration:none;
 	color:#fff;
 	font-weight:bold;
-	background-color:#DD73B6;
+	background-color:#AB1649;
 }
+
+.menu_nav ul li a:active {
+	background-color:#AB1649;
+}
+
+a:hover{
+	font-weight:bold;
+	background-color:#8A1B2C;
+}
+
 .content {
 	padding:0;
 	background:#F7E4AA;
