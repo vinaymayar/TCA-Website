@@ -80,7 +80,8 @@ Teen Connection: Afghanistan</span></h1>
       <div class="menu_nav">
         <ul>
 				<li <?php if($url=="/index.php") echo("class='active'")?> ><a href="./"><span>Home</span></a></li>
-        		<li <?php if($url=="/mission.php") echo("class='active'")?>><a href="mission.php"><span>Mission</span></a></li>
+				<li <?php if($url=="/connections.php") echo("class='active'")?>><a href="connections.php"><span>Connections</span></a></li>			
+        		<!-- <li <?php if($url=="/mission.php") echo("class='active'")?>><a href="mission.php"><span>Mission</span></a></li> -->
                 <li <?php if($url=="/members.php" || $url=="/register.php") echo("class='active'")?> >
 				<?php
                 if(isset($_COOKIE['ID_my_site']))
@@ -93,10 +94,9 @@ Teen Connection: Afghanistan</span></h1>
 				}
 				?> </li>
                 <li <?php if($url=="/about.php") echo("class='active'")?>><a href="about.php"><span>About Us</span></a></li>
-        		<li <?php if($url=="/blog.php") echo("class='active'")?>><a href="blog.php"><span>Blogs</span></a></li>
+        		<!-- <li <?php if($url=="/blog.php") echo("class='active'")?>><a href="blog.php"><span>Blogs</span></a></li> -->
         		<li <?php if($url=="/gallery.php") echo("class='active'")?>><a href="gallery.php"><span>Gallery</span></a></li>
 				<li <?php if($url=="/contact.php") echo("class='active'")?>><a href="contact.php"><span>Contact Us</span></a></li>
-				<li <?php if($url=="/partners.php") echo("class='active'")?>><a href="partners.php"><span>Partners</span></a></li>			
 
         	</ul>
 		</div>
@@ -110,14 +110,21 @@ Teen Connection: Afghanistan</span></h1>
     <div class="content_resize"><!-- InstanceBeginEditable name="mainbar" -->
     	<div class="mainbar">
         	<div class="textbox">
-        		<h2><span>Mission</span><br /> Statement:</h2>
+			<p style="font-size: 34px; color: rgb(64, 64, 64); font-weight: bold; line-height: 40px;">Who We Are:</p>
     				<div class="clr"></div>
-    				<p>"Our mission is to promote conversation between the youth of Afghanistan and America and to foster understanding, respect, and a sense of global community among the leaders of the future. Teen Connection: Afghanistan brings teenagers together from two different cultures through social networking, email, and video. TCA members in both countries work as equals to share their cultures and worldviews, and, in doing so, lay the foundation for a more understanding society of tomorrow."</p>
+    				<p><img src="/images/TCA_bannercircular4.jpg" hspace="10" border="1" alt="Who We Are">Teen Connection:  Afghanistan ("TCA") is an organization started by teens for teens.  Comprised of high school students from public and private schools around New York City, TCA sets up pen-pal relationships between American and Afghan students of similar ages.<br/><br/>Teen Connection:  Afghanistan was created in acknowledgment of the fact that while many adults may become set in their ways and beliefs, kids are more capable of abolishing preconceived notions of people and cultures.  Children can learn to be more understanding and accepting of people different from themselves, but only if they are allowed the opportunity to interact and build relationships.  From this notion comes TCA's core concept:  that teenagers from America and Afghanistan, if given the chance to speak to one another and to learn from one another, will as adults, be more invested in one another's well-being.</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+   				<div class="clr"></div>
+    				<p style="font-size: 34px; color: rgb(64, 64, 64); font-weight: bold; line-height: 40px;">Our Mission Statement:</p>
     				<div class="clr"></div>
-    				<h2><span>Our</span> <br />Purpose:</h2>
-    				<div class="clr"></div>
-    				<p>Teen Connection Afghanistan was created in acknowledgement that while many adults may become set in their ways and beliefs, kids are more capable of abolishing preconceived notions of people and cultures.  Children can learn to be more understanding and accepting of people different from themselves, but only if they are allowed the opportunity to interact and build relationships.  From this notion comes TCA's core concept: that teenagers from America and Afghanistan if given the chance to speak to one another and to learn from one another, will as adults, be more invested in one another's wellbeing.    			</p>
+    				<p><img src="images/sharing_knowledge2.png" hspace="10" border="1" alt="Sharing Knowledge">TCA strives to promote conversation between the youth of Afghanistan and America and to foster understanding, respect and a sense of global community among the leaders of the future.  Teen Connection:  Afghanistan brings teenagers together from two different cultures through social networking, email and video.  TCA members in both countries work as equals to share their cultures and world views and, in doing so, lay the foundation for a more understanding society of tomorrow.</p>
     				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+<!--
     				<div class="yellow_bar"></div>
 					<p>&nbsp;</p>
 					<div class="bottom_bar">
@@ -134,6 +141,7 @@ Teen Connection: Afghanistan</span></h1>
 						    </div>
 						</span>
 					</div>
+-->
             </div>
     	</div>
     <!-- InstanceEndEditable -->
@@ -151,7 +159,7 @@ Teen Connection: Afghanistan</span></h1>
           <div class="clr"></div>
           <div class="post_content"><p>Contact us to sponsor TCA!</p></div>
           <ul class="ex_menu">
-           00><!--
+           00>
             <li><a href="http://www.dreamtemplate.com/">DreamTemplate</a><br />
               Over 6,000+ Premium Web Templates</li>
             <li><a href="http://www.templatesold.com/">TemplateSOLD</a><br />

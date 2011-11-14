@@ -81,7 +81,7 @@ $url = $_SERVER['PHP_SELF'];
 <title>Teen Connection: Afghanistan</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="google-site-verification" content="q99_gDx68tRHS6Vb7FnLbdoyFk7t60ZBBs6YkoR0oGY" />
-<link href="./css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/coin-slider.css" /> 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -150,7 +150,8 @@ Teen Connection: Afghanistan</span></h1>
       <div class="menu_nav">
         <ul>
 				<li <?php if($url=="/index.php") echo("class='active'")?> ><a href="./"><span>Home</span></a></li>
-        		<li <?php if($url=="/mission.php") echo("class='active'")?>><a href="mission.php"><span>Mission</span></a></li>
+				<li <?php if($url=="/connections.php") echo("class='active'")?>><a href="connections.php"><span>Connections</span></a></li>			
+        		<!-- <li <?php if($url=="/mission.php") echo("class='active'")?>><a href="mission.php"><span>Mission</span></a></li> -->
                 <li <?php if($url=="/members.php" || $url=="/register.php") echo("class='active'")?> >
 				<?php
                 if(isset($_COOKIE['ID_my_site']))
@@ -163,11 +164,9 @@ Teen Connection: Afghanistan</span></h1>
 				}
 				?> </li>
                 <li <?php if($url=="/about.php") echo("class='active'")?>><a href="about.php"><span>About Us</span></a></li>
-        		<li <?php if($url=="/blog.php") echo("class='active'")?>><a href="blog.php"><span>Blogs</span></a></li>
+        		<!-- <li <?php if($url=="/blog.php") echo("class='active'")?>><a href="blog.php"><span>Blogs</span></a></li> -->
         		<li <?php if($url=="/gallery.php") echo("class='active'")?>><a href="gallery.php"><span>Gallery</span></a></li>
 				<li <?php if($url=="/contact.php") echo("class='active'")?>><a href="contact.php"><span>Contact Us</span></a></li>
-				<li <?php if($url=="/partners.php") echo("class='active'")?>><a href="partners.php"><span>Partners</span></a></li>			
-
         	</ul>
 		</div>
       <div class="clr">;</div>
@@ -181,10 +180,10 @@ Teen Connection: Afghanistan</span></h1>
     <div class="content_resize"><!-- InstanceBeginEditable name="mainbar" -->
     <div class="mainbar">
     <div class="textbox">
-
-
-<h3>Register</h3>
-<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post" style="display:inline">
+    <div id="form">
+<table style="float:left; margin-left:40px"><tr><td width="370"><span style="font-weight: bold;">Calling All Afghan and American Teens:</span>  If you're interested in tearing down borders and creating a global community, join us!  Get to know a person on the other side of the world, and discover how much you have in common.</td></tr><tr><td width="370"><h2>Register</h2></td></tr>
+<tr><td>
+<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
     <p><input type="text" name="firstname" value="<?php if (isset($_POST['firstname'])) echo $_POST['firstname']; ?>" size="30" maxlength="30" /> <small>First Name</small></p>
     
         <p><input type="text" name="lastname" value="<?php if (isset($_POST['lastname'])) echo $_POST['lastname']; ?>" size="30" maxlength="30" /> <small>Last Name</small></p>
@@ -199,8 +198,9 @@ Teen Connection: Afghanistan</span></h1>
    
     <p><input type="submit" name="submit" value="Register" /></p>
     <input type="hidden" name="submitted" value="TRUE" />
-</form>
-<img border="" src="images/we_want_you.png" style="display:inline; margin-left:450px" width="283" height="334"/>
+</form></td></tr></table>
+<div><img border="" src="images/we_want_you.png" width="275" height="334" vspace="85"/></div> </div>
+<div class="clear"></div>
 </div>
 </div>
 <!-- InstanceEndEditable -->
@@ -218,7 +218,7 @@ Teen Connection: Afghanistan</span></h1>
           <div class="clr"></div>
           <div class="post_content"><p>Contact us to sponsor TCA!</p></div>
           <ul class="ex_menu">
-           00><!--
+           00>
             <li><a href="http://www.dreamtemplate.com/">DreamTemplate</a><br />
               Over 6,000+ Premium Web Templates</li>
             <li><a href="http://www.templatesold.com/">TemplateSOLD</a><br />
